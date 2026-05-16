@@ -818,7 +818,7 @@ export const archivoSections: Section[] = [
         lugar: "Valparaiso",
         productor: "Archivo Sindicato Afrodita",
         descripcion: "Video realizado para la exposición Fuerza Travesti Organizada, 20 de marzo 2025",
-        poster: `${R2}/trabajo-sexual/Barbara.webp`,
+        poster: `${R2}/trabajo-sexual/59.webp`,
         media: "video"
       },
 
