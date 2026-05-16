@@ -3,11 +3,11 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import DarkModeToggle from "./dark-mode-toggle";
 
 const navigation = [
   { name: "Inicio", href: "/" },
   { name: "Archivo Sindical", href: "/archivo" },
+  { name: "Fondos Personales", href: "/fondos-personales" },
   { name: "Cronología", href: "/cronologia" },
   { name: "Actualidad", href: "/actualidad" },
   { name: "Contacto", href: "/contacto" },
@@ -17,7 +17,7 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-neutral-50 dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-700 transition-colors">
+    <header className="bg-neutral-50 border-b border-neutral-200">
       <nav className="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Global">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -40,13 +40,12 @@ export default function Navigation() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 transition-colors relative group py-2"
+                className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors relative group py-2"
               >
                 {item.name}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-neutral-900 dark:bg-neutral-100 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-neutral-900 transition-all duration-300 group-hover:w-full"></span>
               </Link>
             ))}
-            <DarkModeToggle />
           </div>
 
           {/* Mobile menu button */}
@@ -89,26 +88,18 @@ export default function Navigation() {
               </button>
             </div>
             <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-neutral-200 dark:divide-neutral-700">
+              <div className="-my-6 divide-y divide-neutral-200">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 transition-colors"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
                     </Link>
                   ))}
-                </div>
-                <div className="py-6">
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm font-medium text-neutral-600 dark:text-neutral-400">
-                      Tema
-                    </span>
-                    <DarkModeToggle />
-                  </div>
                 </div>
               </div>
             </div>
