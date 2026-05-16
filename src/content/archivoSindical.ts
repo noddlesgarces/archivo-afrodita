@@ -6,9 +6,10 @@ export type SectionImage = {
   serie?: string;
   actividad?: string;
   fecha?: string;
-  productor?:string;
+  productor?: string;
   lugar?: string;
-  
+  youtubeId?: string;
+
 
   // ✅ usamos "descripcion" como campo principal en la UI
   descripcion?: string;
@@ -40,226 +41,226 @@ export const archivoSections: Section[] = [
     intro: "Esta sección reúne documentación relativa a la asamblea de socias del Sindicato Afrodita, órgano deliberativo que toma las decisiones de la organización. Reúne documentos que dan cuenta de la constitución, registro y funcionamiento del sindicato Afrodita, e incluye el acta de constitución, los estatutos y documentación vinculada a las sedes del Sindicato Afrodita.",
     images: [
       {
-        src: `https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/organizacion-sindical/1.webp`,
+        src: `${R2}/organizacion-sindical/1.webp`,
         title: "Casa de Carampangue",
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
         fecha: "Circa 2000",
         lugar: "Valparaíso",
-        productor:"Fondo Clara Andrade",
-        descripcion:"Clara y Vanessa en la casa de Carampangue donde se realizaron las primeras reuniones del sindicato"
+        productor: "Fondo Clara Andrade",
+        descripcion: "Clara y Vanessa en la casa de Carampangue donde se realizaron las primeras reuniones del sindicato"
       },
       {
-        src: `${R2}/organizacion-sindical/2.webp`,
+        src: `${R2}/organizacion-sindical/14.webp`,
         title: "Invitación",
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
         fecha: "Julio 2000",
         lugar: "Valparaíso",
         productor: "Archivo Sindicato Afrodita",
-        descripcion:" Primera invitación a reunión informativa con la CUT para conformar un sindicato."
+        descripcion: " Primera invitación a reunión informativa con la CUT para conformar un sindicato."
       },
       {
-        src: `${R2}/organizacion-sindical/3.webp`,
+        src: `${R2}/organizacion-sindical/22.webp`,
         title: 'Acta de Constitución',
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
         fecha: "22 de agosto de 2000",
         lugar: "Valparaíso",
-        productor:"Archivo Sindicato Afrodita",
-        descripcion:'Acta de constitución del Sindicato de Trabajadoras Independientes Travestis "Afrodita".'
+        productor: "Archivo Sindicato Afrodita",
+        descripcion: 'Acta de constitución del Sindicato de Trabajadoras Independientes Travestis "Afrodita".'
       },
       {
-        src: `${R2}/organizacion-sindical/4.webp`,
+        src: `${R2}/organizacion-sindical/17.webp`,
         title: "Estatutos",
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
         fecha: "22 de agosto del 2000",
         lugar: "Valparaíso",
-        productor:"Archivo Sindicato Afrodita",
-        descripcion:"Estatutos  del Sindicato de Trabajadores Independientes Travestis Afroditas V Región que indican que el sindicato fue fundado en Valparaíso con fecha 22 de agosto del año 2000."
+        productor: "Archivo Sindicato Afrodita",
+        descripcion: "Estatutos  del Sindicato de Trabajadores Independientes Travestis Afroditas V Región que indican que el sindicato fue fundado en Valparaíso con fecha 22 de agosto del año 2000."
       },
       {
-        src: `${R2}/organizacion-sindical/5.webp`,
+        src: `${R2}/organizacion-sindical/24.webp`,
         title: "Primera directiva del sindicato",
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
         fecha: "Circa 2000",
         lugar: "Valparaíso",
-        productor:"Archivo Sindicato Afrodita",
-        descripcion:"Fotografía de primera directiva del Sindicato Afrodita de Valparaíso. De izquierda a derecha Meruan, Vanessa y Claudia."
+        productor: "Archivo Sindicato Afrodita",
+        descripcion: "Fotografía de primera directiva del Sindicato Afrodita de Valparaíso. De izquierda a derecha Meruan, Vanessa y Claudia."
       },
       {
-        src: `${R2}/organizacion-sindical/6.webp`,
+        src: `${R2}/organizacion-sindical/25.webp`,
         title: "Travestis de Valparaíso se convierten en los primeros del país en sindicalizarse",
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
         fecha: "23 de agosto del 2000",
         lugar: "Valparaíso",
-        productor:"Archivo Sindicato Afrodita",
-        descripcion:"Diario La Estrella, 23 agosto 2000. Pag. 13."
+        productor: "Archivo Sindicato Afrodita",
+        descripcion: "Diario La Estrella, 23 agosto 2000. Pag. 13."
       },
       {
-        src: `${R2}/organizacion-sindical/7.webp`,
+        src: `${R2}/organizacion-sindical/26.webp`,
         title: "Circular",
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
         fecha: "Septiembre del 2000",
         lugar: "Valparaíso",
-        productor:"Archivo Sindicato Afrodita",
-        descripcion:"Circular informativa de la constitución de la organización y los objetivos planteados. "
+        productor: "Archivo Sindicato Afrodita",
+        descripcion: "Circular informativa de la constitución de la organización y los objetivos planteados. "
       },
       {
-        src: `${R2}/organizacion-sindical/8.webp`,
+        src: `${R2}/organizacion-sindical/27.webp`,
         title: 'Carta al Seremi del Trabajo de la V Región',
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
         fecha: "07 de septiembre del 2000",
         lugar: "Valparaíso",
-        productor:"Archivo Sindicato Afrodita",
-        descripcion:'Carta firmada por Moises Rebolledo Ponce Presidente Sindicato de Trabajadoras Independientes Travestis "Afrodita" al Sr. José Manuel Mancilla López Seremi de Salud, para solicitarle una audiencia.'
+        productor: "Archivo Sindicato Afrodita",
+        descripcion: 'Carta firmada por Moises Rebolledo Ponce Presidente Sindicato de Trabajadoras Independientes Travestis "Afrodita" al Sr. José Manuel Mancilla López Seremi de Salud, para solicitarle una audiencia.'
       },
       {
-        src: `${R2}/organizacion-sindical/9.webp`,
+        src: `${R2}/organizacion-sindical/28.webp`,
         title: 'Carta al Alcalde de la Ilustre Municipalidad de Valparaíso',
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
         fecha: "07 de septiembre del 2000",
         lugar: "Valparaíso",
-        productor:"Archivo Sindicato Afrodita",
-        descripcion:'Carta de Moises Rebolledo Ponce Presidente, Sr. Meluar Solano Muñoz Secretario y Manuel Orellana Sierra Tesorero del Sindicato de Trabajadoras Independientes Travestis "Afrodita" al Alcalde de la Ilustre Municipalidad de Valparaíso, Hernán Pinto Miranda, solicitando entrevista.'
+        productor: "Archivo Sindicato Afrodita",
+        descripcion: 'Carta de Moises Rebolledo Ponce Presidente, Sr. Meluar Solano Muñoz Secretario y Manuel Orellana Sierra Tesorero del Sindicato de Trabajadoras Independientes Travestis "Afrodita" al Alcalde de la Ilustre Municipalidad de Valparaíso, Hernán Pinto Miranda, solicitando entrevista.'
       },
       {
-        src: `${R2}/organizacion-sindical/10.webp`,
+        src: `${R2}/organizacion-sindical/2.webp`,
         title: 'Carta al Jefe de la Segunda Comisaría Central de Valparaiso',
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
         fecha: "07 de septiembre del 2000",
         lugar: "Valparaíso",
-        productor:"Archivo Sindicato Afrodita",
-        descripcion:'Carta de Moises Rebolledo Ponce Presidente, Sr. Meluar Solano Muñoz Secretario y Manuel Orellana Sierra Tesorero del Sindicato de Trabajadoras Independientes Travestis "Afrodita" al Mayor Carlos Cádiz Jefe de la Segunda Comisaría Central de Valparaiso, solicitando entrevista.'
+        productor: "Archivo Sindicato Afrodita",
+        descripcion: 'Carta de Moises Rebolledo Ponce Presidente, Sr. Meluar Solano Muñoz Secretario y Manuel Orellana Sierra Tesorero del Sindicato de Trabajadoras Independientes Travestis "Afrodita" al Mayor Carlos Cádiz Jefe de la Segunda Comisaría Central de Valparaiso, solicitando entrevista.'
       },
       {
-        src: `${R2}/organizacion-sindical/11.webp`,
+        src: `${R2}/organizacion-sindical/4.webp`,
         title: 'Carta  al Director Regional del Servicio Nacional de Salud de la V Región',
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
         fecha: "07 de Septiembre de 2000",
         lugar: "Valparaíso",
-        productor:"Archivo Sindicato Afrodita",
-        descripcion:'Carta de Moises Rebolledo Ponce Presidente, Sr. Meluar Solano Muñoz Secretario y Manuel Orellana Sierra Tesorero del Sindicato de Trabajadoras Independientes Travestis "Afrodita" al Director Regional del Servicio Nacional de Salud de Valparaiso - San Antonio V Región, Daniel Verdechiz solicitando entrevista.'
+        productor: "Archivo Sindicato Afrodita",
+        descripcion: 'Carta de Moises Rebolledo Ponce Presidente, Sr. Meluar Solano Muñoz Secretario y Manuel Orellana Sierra Tesorero del Sindicato de Trabajadoras Independientes Travestis "Afrodita" al Director Regional del Servicio Nacional de Salud de Valparaiso - San Antonio V Región, Daniel Verdechiz solicitando entrevista.'
       },
       {
-        src: `${R2}/organizacion-sindical/12.webp`,
+        src: `${R2}/organizacion-sindical/7.webp`,
         title: "Primer carné Sindicato Afrodita",
         serie: "Organización Sindical",
-        actividad:'Constitución del sindicato',
+        actividad: 'Constitución del sindicato',
         fecha: "2000",
         lugar: "Valparaíso",
-        productor:'Archivo Sindicato Afrodita',
-        descripcion:'Carné del Sindicato Afrodita de la socia n°2 Sandra Peña'
+        productor: 'Archivo Sindicato Afrodita',
+        descripcion: 'Carné del Sindicato Afrodita de la socia n°2 Sandra Peña'
       },
       {
-        src: `${R2}/organizacion-sindical/13.webp`,
+        src: `${R2}/organizacion-sindical/8.webp`,
         title: "Socias - inauguración sede Colón",
         serie: "Organización Sindical",
         fecha: "Agosto de 2003",
         lugar: "Valparaíso",
-        productor:'Archivo Sindicato Afrodita',
-        descripcion:'Inaugutación sede Colón - Fundadoras del Sindicato: Paloma, Morin, Zuliana, Cristina, Giovana, Ale, Dayana, Camilo, Patty'
+        productor: 'Archivo Sindicato Afrodita',
+        descripcion: 'Inaugutación sede Colón - Fundadoras del Sindicato: Paloma, Morin, Zuliana, Cristina, Giovana, Ale, Dayana, Camilo, Patty'
       },
       {
-        src: `${R2}/organizacion-sindical/14.webp`,
+        src: `${R2}/organizacion-sindical/9.webp`,
         title: "Bandera - inauguración sede Colón",
         serie: "Organización Sindical",
         actividad: "Actividades en sede",
         fecha: "Agosto de 2003",
         lugar: "Valparaíso",
-        productor:"Archivo Sindicato Afrodita",
-        descripcion:'Zuliana con la primera bandera confeccionada por Pika para una marcha con Gladys Marin del PC Chileno.'
+        productor: "Archivo Sindicato Afrodita",
+        descripcion: 'Zuliana con la primera bandera confeccionada por Pika para una marcha con Gladys Marin del PC Chileno.'
       },
       {
-         src: `${R2}/organizacion-sindical/15.webp`,
+        src: `${R2}/organizacion-sindical/10.webp`,
         title: "Bendición Padre Pepo - inauguración sede Colón",
         serie: "Organización Sindical",
         actividad: "Actividades en sede",
         fecha: "Agosto de 2003",
         lugar: "Valparaíso",
-        productor:'Archivo Sindicato Afrodita',
-        descripcion:'Ceremonia de inauguración de la sede Colón. De izquierda a derecha: Padre Pepo de la Iglesia La Matriz, Marcelo Aguilar de Acción Gay y Zuliana.'
+        productor: 'Archivo Sindicato Afrodita',
+        descripcion: 'Ceremonia de inauguración de la sede Colón. De izquierda a derecha: Padre Pepo de la Iglesia La Matriz, Marcelo Aguilar de Acción Gay y Zuliana.'
       },
       {
-        src: `${R2}/organizacion-sindical/16.webp`,
+        src: `${R2}/organizacion-sindical/11.webp`,
         title: "Alcalde - inauguración sede Colón",
         serie: "Organización Sindical",
         actividad: "Actividades en sede",
         fecha: "Agosto de 2003",
         lugar: "Valparaíso",
-        productor:'Archivo Sindicato Afrodita',
-        descripcion:'En la fotografía aparece Zuliana junto al alcalde de Valparaíso, Sr. Jorge Castro.'
+        productor: 'Archivo Sindicato Afrodita',
+        descripcion: 'En la fotografía aparece Zuliana junto al alcalde de Valparaíso, Sr. Jorge Castro.'
       },
       {
-        src: `${R2}/organizacion-sindical/17.webp`,
+        src: `${R2}/organizacion-sindical/12.webp`,
         title: "Socias ante lienzo- inauguración sede Colón",
         serie: "Organización Sindical",
         actividad: "Actividades en sede",
         fecha: "Agosto del 2003",
         lugar: "Valparaíso",
-        productor:"Archivo Sindicato Afrodita",
-        descripcion:"En la fotografía de izquierda a derecha: Camilo, Zuliana  Yhoana, Denis, Jimena y Alejandro, integrantes de la directiva del momento, de rojo está Tania, en ese momento integrante del sindicato Atheneus. "
+        productor: "Archivo Sindicato Afrodita",
+        descripcion: "En la fotografía de izquierda a derecha: Camilo, Zuliana  Yhoana, Denis, Jimena y Alejandro, integrantes de la directiva del momento, de rojo está Tania, en ese momento integrante del sindicato Atheneus. "
       },
       {
-        src: `${R2}/organizacion-sindical/18.webp`,
+        src: `${R2}/organizacion-sindical/13.webp`,
         title: "Travestis inaugiran sede",
         serie: "Organización Sindical",
         actividad: "Actividades en sede",
         fecha: "circa 2003",
         lugar: "Valparaíso",
-        productor:"Archivo Sindicato Afrodita",
-        descripcion:"Recorte de prensa s/f, periodico no identificado,  que da cuenta de la inauguración de la sede Colón"
+        productor: "Archivo Sindicato Afrodita",
+        descripcion: "Recorte de prensa s/f, periodico no identificado,  que da cuenta de la inauguración de la sede Colón"
       },
       {
-        src: `${R2}/organizacion-sindical/19.webp`,
+        src: `${R2}/organizacion-sindical/17.webp`,
         title: "Estatutos",
         serie: "Organización Sindical",
         actividad: "Reforma de estatutos",
         fecha: "17 de diciembre de 2003",
         lugar: "Valparaíso",
-        productor:"Archivo Sindicato Afrodita",
-        descripcion:" Estatutos que modifican algunos articulos y formalizan el cambio de nombre de la organización"
+        productor: "Archivo Sindicato Afrodita",
+        descripcion: " Estatutos que modifican algunos articulos y formalizan el cambio de nombre de la organización"
       },
       {
-        src: `${R2}/organizacion-sindical/20.webp`,
+        src: `${R2}/organizacion-sindical/18.webp`,
         title: "Jornadas de trabajo en sede de la organización",
         serie: "Organización Sindical",
         actividad: "Actividades en sede",
         fecha: "circa 2004",
         lugar: "Valparaíso",
-        productor:"Archivo Sindicato Afrodita",
-        descripcion:"Fotogragía de integrantes del sindicato, en primera linea Clara, Vanesa, Zuliana, Valeria. Atrás se ve el lienzo del Sindicato de Trabajadoras Independientes Travestis Afrodita"
+        productor: "Archivo Sindicato Afrodita",
+        descripcion: "Fotogragía de integrantes del sindicato, en primera linea Clara, Vanesa, Zuliana, Valeria. Atrás se ve el lienzo del Sindicato de Trabajadoras Independientes Travestis Afrodita"
       },
       {
-        src: `${R2}/organizacion-sindical/21.webp`,
+        src: `${R2}/organizacion-sindical/19.webp`,
         title: "Travestis piden casa fiscal y CORES dicen ¡No, hacen puras cochinadas!",
         serie: "Organización Sindical",
         actividad: "Gestiones por sede Avenida España",
         fecha: "s/f",
         lugar: "Valparaíso",
-        productor:"Archivo Sindicato Afrodita",
-        descripcion:"Recorte de prensa s/f, periodico no identificado, sobre la solicitud a Bienes Nacionales de una propiedad para ser usada como sede social"
+        productor: "Archivo Sindicato Afrodita",
+        descripcion: "Recorte de prensa s/f, periodico no identificado, sobre la solicitud a Bienes Nacionales de una propiedad para ser usada como sede social"
       },
       {
-        src: `${R2}/organizacion-sindical/22.webp`,
+        src: `${R2}/organizacion-sindical/20.webp`,
         title: "Conferencia de prensa - inauguración sede Av. España",
         serie: "Organización Sindical",
         actividad: "Inauguración sede Avenida España",
         fecha: "2006",
         lugar: "Valparaíso",
-        productor:'Archivo Sindicato Afrodita',
-        descripcion:'Inauguración de la sede de Avenida España. En la fotografía se aprecia a Valeria en el patio trasero junto a diversas autoridades.'
+        productor: 'Archivo Sindicato Afrodita',
+        descripcion: 'Inauguración de la sede de Avenida España. En la fotografía se aprecia a Valeria en el patio trasero junto a diversas autoridades.'
       },
       {
-        src: `${R2}/organizacion-sindical/23.webp`,
+        src: `${R2}/organizacion-sindical/21.webp`,
         title: "Valeria Bustos y  Marcelo Aguilar - inauguración sede Av. España",
         serie: "Organización Sindical",
         actividad: "Inauguración sede Avenida España",
@@ -269,15 +270,14 @@ export const archivoSections: Section[] = [
         descripcion: "Inauguración de la sede de Avenida España. En la fotografía se aprecia a Valeria, Marcelo Aguilar, autoridades y prensa."
       },
       {
-        src: `${R2}/organizacion-sindical/24.mp4`,
+        src: "https://www.youtube.com/watch?v=sMb82rrQjW8",
         title: "Sindicalilzar la esquina",
         serie: "Organización Sindical",
         actividad: "Exposición Fuerza Travesti Organizada",
         fecha: "2025",
         lugar: "Valparaiso",
-        productor:"Archivo Sindicato Afrodita- Editado por Lucas Disalvo",
-        descripcion:"Video de la historia del Sindicato Afrodita, realización de Lucas M. Disalvo",
-        poster: `${R2}/organizacion-sindical/27.png`,
+        productor: "Archivo Sindicato Afrodita- Editado por Lucas Disalvo",
+        descripcion: "Video de la historia del Sindicato Afrodita, realización de Lucas M. Disalvo",
         media: "video"
       },
     ],
@@ -809,14 +809,14 @@ export const archivoSections: Section[] = [
         descripcion: "Ordenanza 0479 de Secretario Regional Ministerial de Salud, Sr. Fernando Olmedo a Presidenta del Sindicato Afrodita, Sra. Zuliana Araya. Respuesta del Seremi de Salud en relación con la situación de los internos del módulo 117 del Complejo Penitenciario de Valparaíso"
       },
       {
-        src:"/media/archivo-sindical/trabajo-sexual/53.mp4",
+        src: "/media/archivo-sindical/trabajo-sexual/53.mp4",
         title: "Afrodita News",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Exposición Fuerza Travesti Organizada",
         fecha: "2025",
         lugar: "Valparaiso",
-        productor:"Archivo Sindicato Afrodita",
-        descripcion:" Video realizado para la exposición Fuerza Travesti Organizada, 20 de marzo 2025",
+        productor: "Archivo Sindicato Afrodita",
+        descripcion: " Video realizado para la exposición Fuerza Travesti Organizada, 20 de marzo 2025",
         poster: "/media/archivo-sindical/trabajo-sexual/Barbara.webp",
         media: "video"
       },
@@ -1043,8 +1043,8 @@ export const archivoSections: Section[] = [
         actividad: "Marchas",
         fecha: "5 de septiembre de 2002",
         lugar: "Valparaíso",
-        productor:'Archivo Sindicato Afrodita',
-        descripcion:'El Mercurio de Valparaiso, 5 de septiembe de 2002, p. 7. Conmemoración incendio de la Disco Divine, piden reapertura del caso.'
+        productor: 'Archivo Sindicato Afrodita',
+        descripcion: 'El Mercurio de Valparaiso, 5 de septiembe de 2002, p. 7. Conmemoración incendio de la Disco Divine, piden reapertura del caso.'
       },
       {
         src: "/media/archivo-sindical/alianzas-trans/2.webp",
@@ -1053,8 +1053,8 @@ export const archivoSections: Section[] = [
         actividad: "Marchas",
         fecha: "27 de septiembre de 2003",
         lugar: "Valparaíso",
-        productor:'Sindicato Archivo Afrodita',
-        descripcion:'Diario La Estrella de Valparaíso,27 de septiembre de 2003, p. 4. Más de veinte integrantes viajan a participar de la Marcha del Orgullos en Santiago.'
+        productor: 'Sindicato Archivo Afrodita',
+        descripcion: 'Diario La Estrella de Valparaíso,27 de septiembre de 2003, p. 4. Más de veinte integrantes viajan a participar de la Marcha del Orgullos en Santiago.'
       },
       {
         src: "/media/archivo-sindical/alianzas-trans/3.webp",
@@ -1588,6 +1588,10 @@ export const archivoSections: Section[] = [
   },
 ];
 
+export function getYoutubeId(src: string): string | null {
+  const match = src.match(/(?:v=|youtu\.be\/)([^&]+)/);
+  return match ? match[1] : null;
+}
 
 
 // Buscar una sección por slug
@@ -1600,13 +1604,13 @@ export function getSection(slug: string): Section | undefined {
     ...section,
     images: section.images.map((img) => {
       const isVideo = /\.mp4(\?.*)?$/i.test(img.src);
-      
+
       // Si es video y no tiene poster, intentar inferir uno
       let poster = img.poster;
       if (isVideo && !poster) {
         poster = img.src.replace(/\.mp4(\?.*)?$/i, ".png");
       }
-      
+
       return {
         ...img,
         media: isVideo ? "video" : (img.media ?? "image"),

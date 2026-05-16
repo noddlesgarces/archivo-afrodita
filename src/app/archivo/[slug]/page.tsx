@@ -4,12 +4,11 @@ import { use, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Navigation from "@/components/navigation";
-import { getSection, SectionImage } from "@/content/archivoSindical";
+import { getSection, SectionImage, getYoutubeId } from "@/content/archivoSindical";
 
 const PLACEHOLDER =
   "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IBQAAAAQAAAAMwAAQUxQSAwAAAAQAgCdASoQABAABUB8JbACdDBgABAAA=";
 
-// shimmer para blurDataURL (ultra liviano)
 const shimmer = (w: number, h: number) =>
   `data:image/svg+xml;base64,${Buffer.from(
     `<svg width="${w}" height="${h}" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -26,21 +25,17 @@ const shimmer = (w: number, h: number) =>
     </svg>`
   ).toString("base64")}`;
 
-// FIX: Asegura que la ruta devuelva siempre una STRING válida ("" si es null/undefined)
 const ensureLeadingSlash = (path: string | undefined): string => {
   if (!path) return "";
   if (path.startsWith("http") || path.startsWith("//")) return path;
   return path.startsWith("/") ? path : `/${path}`;
 };
 
-// ✅ NUEVO: Valida si una ruta es válida para Next.js Image
 const isValidImageSrc = (src: string): boolean => {
   if (!src || src === "" || src === PLACEHOLDER) return false;
-  // Verifica que sea una ruta válida (empieza con / o http)
   return src.startsWith("/") || src.startsWith("http");
 };
 
-// Qué guardamos en el modal
 type ModalMedia =
   | { kind: "image"; src: string; title?: string; poster?: string }
   | { kind: "video"; src: string; poster?: string; title?: string };
@@ -51,23 +46,16 @@ export default function ArchivoSectionPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = use(params);
-
   const section = getSection(slug);
-
-  // Estado del modal + loading visual
   const [selected, setSelected] = useState<ModalMedia | null>(null);
   const [modalLoading, setModalLoading] = useState(false);
-
-  // Pre-carga por hover/touch
   const preloaded = useRef<Set<string>>(new Set());
 
   const preloadSrc = (src?: string) => {
     const safeSrc = ensureLeadingSlash(src);
-    
     if (!safeSrc || safeSrc === "" || preloaded.current.has(safeSrc) || typeof window === "undefined") {
       return;
     }
-    
     const img = new window.Image();
     img.src = safeSrc;
     preloaded.current.add(safeSrc);
@@ -76,23 +64,16 @@ export default function ArchivoSectionPage({
   const items = useMemo(() => {
     const data = section?.images ?? [];
     return data.map((it, idx) => {
-      const isVideo = it.media === "video" || /\.mp4(\?.*)?$/i.test(it.src || "");
-      
-      // 1. Obtener la ruta de la miniatura (poster o src)
+      const isVideo = it.media === "video" || /\.mp4(\?.*)?$/i.test(it.src || "") || getYoutubeId(it.src) !== null;
       const rawSrc = isVideo ? (it.poster || it.src) : it.src;
-      
-      // 2. ✅ CRÍTICO: Si es video Y tiene poster, validamos que el poster sea válido
       let thumb = ensureLeadingSlash(rawSrc);
       if (isVideo && it.poster) {
         const posterPath = ensureLeadingSlash(it.poster);
-        // Si el poster no es válido, usamos PLACEHOLDER
         thumb = isValidImageSrc(posterPath) ? posterPath : PLACEHOLDER;
       } else if (!isValidImageSrc(thumb)) {
         thumb = PLACEHOLDER;
       }
-      
       const src = ensureLeadingSlash(it.src) || PLACEHOLDER;
-      
       return {
         ...it,
         _idx: idx,
@@ -108,35 +89,24 @@ export default function ArchivoSectionPage({
     });
   }, [section]);
 
-  // Abrir modal desde #img-N con scroll al centro
   const gridRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!section || typeof window === "undefined") return;
     const match = /^#img-(\d+)$/.exec(window.location.hash);
     if (!match) return;
-
     const idx = parseInt(match[1], 10);
     const it = items[idx];
     if (!it) return;
-
     setModalLoading(true);
     if (it._isVideo) {
-      // ✅ FIX: Validar poster antes de usarlo
       const safePoster = ensureLeadingSlash(it.poster);
       const validPoster = isValidImageSrc(safePoster) ? safePoster : undefined;
-
-      setSelected({ 
-        kind: "video", 
-        src: it._src,
-        poster: validPoster, // ✅ Puede ser undefined si no es válido
-        title: it.title 
-      });
+      setSelected({ kind: "video", src: it._src, poster: validPoster, title: it.title });
     } else {
       preloadSrc(it._src);
       setSelected({ kind: "image", src: it._src, title: it.title, poster: it.poster });
     }
-
     const el = gridRef.current?.querySelector(`[data-idx="${idx}"]`);
     if (el && "scrollIntoView" in el) {
       (el as HTMLElement).scrollIntoView({ block: "center", behavior: "smooth" });
@@ -158,17 +128,12 @@ export default function ArchivoSectionPage({
       <Navigation />
 
       <main className="mx-auto max-w-7xl px-6 lg:px-8 py-12">
-        {/* Volver */}
         <div className="mb-8">
-          <Link
-            href="/archivo"
-            className="text-sm text-neutral-600 hover:text-neutral-900 transition-colors"
-          >
+          <Link href="/archivo" className="text-sm text-neutral-600 hover:text-neutral-900 transition-colors">
             ← Volver a Archivo Sindical
           </Link>
         </div>
 
-        {/* Header */}
         <header className="mb-10">
           <h1 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900">
             {section.title}
@@ -178,7 +143,6 @@ export default function ArchivoSectionPage({
           )}
         </header>
 
-        {/* Portada */}
         <div className="relative w-full aspect-[21/9] rounded-xl overflow-hidden bg-neutral-200 mb-10">
           <Image
             src={coverSrc}
@@ -192,45 +156,27 @@ export default function ArchivoSectionPage({
           />
         </div>
 
-        {/* Galería */}
         {items.length === 0 ? (
           <div className="rounded-xl border border-dashed p-10 text-center text-neutral-500 bg-white">
-            Aún no hay imágenes en esta sección. Agrega archivos en
-            <code className="mx-1 px-2 py-1 bg-neutral-100 rounded">
-              public/media/archivo-sindical/{slug}/
-            </code>
-            y actualiza <code className="mx-1 px-2 py-1 bg-neutral-100 rounded">archivoSindical.ts</code>.
+            Aún no hay imágenes en esta sección.
           </div>
         ) : (
           <section ref={gridRef} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {items.map((it, idx) => (
               <div key={idx} className="flex flex-col gap-3">
-                {/* Miniatura clickeable */}
                 <button
                   data-idx={idx}
-                  onMouseEnter={() => preloadSrc(it._isVideo ? it.poster : it._src)} 
+                  onMouseEnter={() => preloadSrc(it._isVideo ? it.poster : it._src)}
                   onFocus={() => preloadSrc(it._isVideo ? it.poster : it._src)}
                   onClick={() => {
                     setModalLoading(true);
                     if (it._isVideo) {
-                      // ✅ FIX: Validar poster antes de usarlo
                       const safePoster = ensureLeadingSlash(it.poster);
                       const validPoster = isValidImageSrc(safePoster) ? safePoster : undefined;
-
-                      setSelected({
-                        kind: "video",
-                        src: it._src,
-                        poster: validPoster, // ✅ Puede ser undefined
-                        title: it.title,
-                      });
+                      setSelected({ kind: "video", src: it._src, poster: validPoster, title: it.title });
                     } else {
                       preloadSrc(it._src);
-                      setSelected({
-                        kind: "image",
-                        src: it._src, 
-                        title: it.title,
-                        poster: it.poster,
-                      });
+                      setSelected({ kind: "image", src: it._src, title: it.title, poster: it.poster });
                     }
                   }}
                   className="relative aspect-[3/4] rounded-lg overflow-hidden bg-neutral-200 group"
@@ -255,44 +201,17 @@ export default function ArchivoSectionPage({
                   )}
                 </button>
 
-                {/* Textos debajo de la imagen */}
                 <div className="px-1">
                   {it.title && (
-                    <h3 className="font-serif font-semibold text-neutral-900">
-                      {it.title}
-                    </h3>
+                    <h3 className="font-serif font-semibold text-neutral-900">{it.title}</h3>
                   )}
                   <div className="mt-1 text-sm leading-6 text-neutral-700 space-y-0.5">
-                    {it.serie && (
-                      <p>
-                        <span className="text-neutral-500">Serie:</span> {it.serie}
-                      </p>
-                    )}
-                    {it.actividad && (
-                      <p>
-                        <span className="text-neutral-500">Actividad:</span> {it.actividad}
-                      </p>
-                    )}
-                    {it.fecha && (
-                      <p>
-                        <span className="text-neutral-500">Fecha:</span> {it.fecha}
-                      </p>
-                    )}
-                    {it.lugar && (
-                      <p>
-                        <span className="text-neutral-500">Lugar:</span> {it.lugar}
-                      </p>
-                    )}
-                    {it.productor && (
-                      <p>
-                        <span className="text-neutral-500">Productor:</span> {it.productor}
-                      </p>
-                    )}
-                    {it.descripcion && (
-                      <p>
-                        <span className="text-neutral-500">Descripción:</span> {it.descripcion}
-                      </p>
-                    )}
+                    {it.serie && <p><span className="text-neutral-500">Serie:</span> {it.serie}</p>}
+                    {it.actividad && <p><span className="text-neutral-500">Actividad:</span> {it.actividad}</p>}
+                    {it.fecha && <p><span className="text-neutral-500">Fecha:</span> {it.fecha}</p>}
+                    {it.lugar && <p><span className="text-neutral-500">Lugar:</span> {it.lugar}</p>}
+                    {it.productor && <p><span className="text-neutral-500">Productor:</span> {it.productor}</p>}
+                    {it.descripcion && <p><span className="text-neutral-500">Descripción:</span> {it.descripcion}</p>}
                   </div>
                 </div>
               </div>
@@ -310,7 +229,6 @@ export default function ArchivoSectionPage({
               className="relative w-full max-w-5xl aspect-[3/2] bg-black rounded-md overflow-hidden"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Spinner mientras carga */}
               {modalLoading && (
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="h-10 w-10 animate-spin rounded-full border-2 border-white/40 border-t-white" />
@@ -329,14 +247,26 @@ export default function ArchivoSectionPage({
                   onLoad={() => setModalLoading(false)}
                 />
               ) : (
-                <video
-                  src={selected.src}
-                  poster={selected.poster} // ✅ Ahora puede ser undefined sin problemas
-                  controls
-                  preload="metadata"
-                  className="w-full h-full object-contain"
-                  onLoadedData={() => setModalLoading(false)}
-                />
+                (() => {
+                  const ytId = getYoutubeId(selected.src);
+                  return ytId ? (
+                    <iframe
+                      src={`https://www.youtube.com/embed/${ytId}`}
+                      className="w-full h-full"
+                      allowFullScreen
+                      onLoad={() => setModalLoading(false)}
+                    />
+                  ) : (
+                    <video
+                      src={selected.src}
+                      poster={selected.poster}
+                      controls
+                      preload="metadata"
+                      className="w-full h-full object-contain"
+                      onLoadedData={() => setModalLoading(false)}
+                    />
+                  );
+                })()
               )}
 
               <button
