@@ -29,7 +29,7 @@ export type Section = {
   images: SectionImage[];
 };
 
-const R2 = "https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/sindicato/sindicato";
+const R2 = "https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev";
 
 // ======== TUS SECCIONES (las dejo tal cual me las pasaste) ========
 export const archivoSections: Section[] = [
