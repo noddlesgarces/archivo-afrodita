@@ -286,11 +286,11 @@ export const archivoSections: Section[] = [
   {
     slug: "trabajo-sexual",
     title: "Trabajo Sexual",
-    cover: "/media/archivo-sindical/trs.jpg",
+    cover: `${R2}/trabajo-sexual/38.webp`,
     intro: "Esta sección del archivo documenta las formas de negociación con autoridades municipales, y regionales, funcionarios de la policía y de gendarmería, así como  acciones en defensa del derecho a ejercer el trabajo sexual y por la mejora de condiciones carcelarias, denuncias por casos de discriminación, violencia policial o ataques neonazis.",
     images: [
       {
-        src: "/media/archivo-sindical/trabajo-sexual/1.webp",
+        src: `${R2}/trabajo-sexual/15.webp`,
         title: "Amenazan de muerte a travestis de Viña",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Neonazis",
@@ -300,7 +300,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso, portada, 14 diciembre 1999"
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/2.webp",
+        src: `${R2}/trabajo-sexual/26.webp`,
         title: "A botellazos desfiguraron el rostro a travesti porteño",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Neonazis",
@@ -310,7 +310,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso, 12 enero 2002, p.15. Noticia relata el brutal ataque neonazi que afectó a Valeria."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/3.webp",
+        src: `${R2}/trabajo-sexual/38.webp`,
         title: "Barrio Rojo: Agita las aguas en Viña del Mar",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Conflicto con Municipio",
@@ -320,7 +320,7 @@ export const archivoSections: Section[] = [
         descripcion: "Recorte de prensa, diario desconocido, 4 octubre 2002. Disputa entre sindicato, vecinos y municipio ante la posibilidad de instalar un Barrio Rojo en la comuna de Viña del Mar."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/4.webp",
+        src: `${R2}/trabajo-sexual/4.webp`,
         title: "Travestis dicen que se defenderán con palabras frente a evangélicos",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Conflicto con evangélicos",
@@ -330,7 +330,7 @@ export const archivoSections: Section[] = [
         descripcion: 'La Estrella de Valparaiso, 16 diciembre 2002, p.3. La nota señala que el grupo "Los valientes de David" se proponen combatir el trabajo sexual callejero a través de la evangelización.'
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/5.webp",
+        src: `${R2}/trabajo-sexual/53.webp`,
         title: "Nuestras unicas armas son la palabra y el amor de Dios",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Inauguración sede Avenida España",
@@ -340,7 +340,7 @@ export const archivoSections: Section[] = [
         descripcion: 'La Estrella de Valparaiso, 18 diciembre 2002, p. 4. Líder del grupo evangélico "Los Valientes de David" señala que sólo abordarán a travestis por medio de la palabra de Dios, desmintiendo supuestas agresiones a la comunidad travesti.'
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/6.webp",
+        src: `${R2}/trabajo-sexual/6.webp`,
         title: "Travestis viñamarinos dicen que enfrentaran evangélicos con besos, toqueteos y desnudos",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Conflicto con evangélicos",
@@ -350,7 +350,7 @@ export const archivoSections: Section[] = [
         descripcion: 'La Estrella de Valparaíso, 23 diciembre 2002, p. 5. Respuesta del Sindicato Afrodita a las intenciones del grupo evangélico "Los Valientes de David". Señalan que les responderán con besos y desnudos.'
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/7.webp",
+        src: `${R2}/trabajo-sexual/55.webp`,
         title: "Sida en travestis causaría ataques",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Los Andes",
@@ -360,7 +360,7 @@ export const archivoSections: Section[] = [
         descripcion: "Diario el Trabajo, portada, 31 diciembre 2002. Titulares del conflicto entre Carabineros y población travesti de Los Andes."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/8.webp",
+        src: `${R2}/trabajo-sexual/56.webp`,
         title: "Travestis infectados con sida podría ser el origen de los ataques",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Los Andes",
@@ -370,17 +370,17 @@ export const archivoSections: Section[] = [
         descripcion: "Diario el Trabajo, 31 diciembre 2002, p. 6. Entrevista a prefecto de carabineros de Aconcagua, coronel Jorge Alvarez sobre la seguidilla de agresiones hacia la población travesti."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/9.webp",
-        title: "Amenazan de muerte a travestis de Viña",
+        src: `${R2}/trabajo-sexual/57.webp`,
+        title: "Carta a los medios de comunicación",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Los Andes",
-        fecha: "14 diciembre 1999",
+        fecha: "21 de Enero de 2003",
         lugar: "Valparaíso",
         productor: "Archivo Sindicato Afrodita",
         descripcion: "Comunicado de prensa firmado por Zuliana Araya denunciando agresiones hacia Pamela Allende en Los Andes que le causaron graves lesiones."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/10.webp",
+        src: `${R2}/trabajo-sexual/1.webp`,
         title: "Carta del Coronel de Carabineros",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Los Andes",
@@ -390,7 +390,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Respuesta del coronel de carabineros Heriberto Bustos dirigida al Señor  Enrique Alejandro Araya Gutiérrez  Presidente de Sindicato de Trabajadores Independientes Travestis "Afrodita" por la denuncia del Sindicato Afrodita hacia los dichos del coronel Alvarez.'
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/11.webp",
+        src: `${R2}/trabajo-sexual/2.webp`,
         title: "Carta al Gobernador de Los Andes",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Los Andes",
@@ -400,7 +400,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Carta de  Zuliana Araya Presidenta de Sindicato Independiente de Travestis - Afrodita al Gobernador de Los Andes Benigno Retamal Rodríguez  denunciando actos de tortura hacia compañeras que fueron detenidas en Los Andes.'
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/12.webp",
+        src: `${R2}/trabajo-sexual/3.webp`,
         title: "Carta de la Ministra de Defensa Nacional",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Los Andes",
@@ -410,7 +410,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Respuesta de la ministra de defensa nacional, Sra. Michel Bachelet Jeria dirigida al Sindicato Afrodita para comunicar las acciones tomadas por esa repartición pública ante las denuncias por el caso Los Andes.'
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/13.webp",
+        src: `${R2}/trabajo-sexual/5.webp`,
         title: "Carta al Ministro de Justicia",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Lucha anticarcelaria",
@@ -420,7 +420,7 @@ export const archivoSections: Section[] = [
         descripcion: "Carta de Zuliana, presidenta del Sindicato Afrodita al Ministro de Justicia, Sr. Luis Bastes Hidalgo que denuncia la discriminación a presos homosexuales en cárcel de San Miguel y solicitud de audiencia."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/14.webp",
+        src: `${R2}/trabajo-sexual/6.webp`,
         title: "Carta manuscrita de internos homsexuales de la cárcel de Quillota",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Lucha anticarcelaria",
@@ -430,7 +430,7 @@ export const archivoSections: Section[] = [
         descripcion: "Carta manuscrita de los internos de la sección  especial del CDP de Quillota al Sindicato Afrodita."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/15.webp",
+        src: `${R2}/trabajo-sexual/8.webp`,
         title: "Carta al Gobernador de Valparaíso",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Lucha anticarcelaria",
@@ -440,7 +440,7 @@ export const archivoSections: Section[] = [
         descripcion: "Carta de Zuliana Araya, presidenta del Sindicato Afrodita a Gobernador de Valparaíso, Sr. Iván de la Maza denunciando por condiciones carcelarias en el complejo penal de Valparaíso."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/16.webp",
+        src: `${R2}/trabajo-sexual/9.webp`,
         title: "Grace y otras compañeras en la Carcel de Valparaiso",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Lucha anticarcelaria",
@@ -450,7 +450,7 @@ export const archivoSections: Section[] = [
         descripcion: "En esta fotografía, al interior de una celda de la cárcel de Valparaiso en la calle Dinamarca. De izquierda a derecha: Claudia, dos mujeres monitoras, Marcia Alejandra (la masca lata), Grace y el Che Antonio."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/17.webp",
+        src: `${R2}/trabajo-sexual/10.webp`,
         title: "Carta del Subsecretario de Justicia",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Lucha anticarcelaria",
@@ -460,7 +460,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Carta del Subsecretario de Justicia Jaime Arellano Quintana al Sr.Enrique Alejandro Araya Gutiérrez "Zuliana" Presidenta de Sindicato de Trabajadores Independientes Travestis - Afrodita ante las denuncias realizadas por el sindicato.'
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/18.webp",
+        src: `${R2}/trabajo-sexual/12.webp`,
         title: "Carta de Director de Gendarmería",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: " Lucha anticarcelaria",
@@ -470,7 +470,7 @@ export const archivoSections: Section[] = [
         descripcion: "Respuesta del Director de Gendarmería, Sr. Juan Carlo Pérez Contreras a Zuliana Araya, Presidenta del Sindicato Afrodita de Valparaíso en respuesta a las denuncias por discriminación a la población travesti en cárceles de Valparaíso."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/19.webp",
+        src: `${R2}/trabajo-sexual/14.webp`,
         title: "Carta al Director Regional de Gendarmería.",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Lucha anticarcelaria",
@@ -480,7 +480,7 @@ export const archivoSections: Section[] = [
         descripcion: "Carta de Zuliana Araya, Presidenta del Sindicato Afrodita  al Director Regional de Gendarmería solicitando visita a centros penitenciarios para verificar las condiciones de la población travesti."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/20.webp",
+        src: `${R2}/trabajo-sexual/16.webp`,
         title: "Autorización de Gendarmería",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Lucha anticarcelaria",
@@ -490,7 +490,7 @@ export const archivoSections: Section[] = [
         descripcion: "Autorización de Horacio Gallo Brochon, Inspector Director Regional de Gendarmería de Chile a Zuliana Araya, Presidenta del Sindicato Afrodita de Valparaíso para al CDP de Quillota."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/21.webp",
+        src: `${R2}/trabajo-sexual/17.webp`,
         title: "En la cárcel porteña Acusan discriminación a los presos con Sida",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Lucha anticarcelaria",
@@ -500,7 +500,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaiso, 23 de octubre de 2003, p.7. Nota periodística que aborda las denuncias del sindicato en relación con el trato vejatorio al que estarían siendo sometidas las compañeras portadoras del VIH en la cárcel de Valparaíso"
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/22.webp",
+        src: `${R2}/trabajo-sexual/18.webp`,
         title: "Carta al Jefe del Complejo Valparaíso",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Lucha anticarcelaria",
@@ -510,7 +510,7 @@ export const archivoSections: Section[] = [
         descripcion: "Carta de Zuliana Araya, Presidenta del Sindicato Afrodita al Jefe del Complejo Valparaíso, Sr. Jorge Castillo, solicitando permiso para visitar y verificar las condiciones del módulo 112."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/23.webp",
+        src: `${R2}/trabajo-sexual/19.webp`,
         title: 'Instalar un "Barrio Rojo" sería la forma de terminar con el problema travesti en Viña',
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Conflicto con Municipio",
@@ -520,7 +520,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso, 14 de abril, p. 17. La nota relata la creación de una Mesa de Trabajo entre sindicato, vecinos y Municipio para evaluar posible instalación de Barrio Rojo."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/24.webp",
+        src: `${R2}/trabajo-sexual/20.webp`,
         title: 'Alcaldesa Reginato no quiere "Barrio Rojo" en Viña del Mar',
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Conflicto con Municipio",
@@ -530,7 +530,7 @@ export const archivoSections: Section[] = [
         descripcion: "Recorte de prensa, periodico no identificado, 16 abril 2005. Nota que señala que Alcaldesa de Viña del Mar no se muestra de acuerdo con la idea de levantar un Barrio Rojo en su comuna."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/25.webp",
+        src: `${R2}/trabajo-sexual/21.webp`,
         title: '"Estamos siendo utilizadas. Nos sentimos engañadas y estafadas"',
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Conflicto con Municipio",
@@ -540,7 +540,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso, 12 julio 2005, p. 3. La nota da cuenta de la desconfomidad de los sindicatos de trabajadoras sexuales con el Municipio viñamarino."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/26.webp",
+        src: `${R2}/trabajo-sexual/22.webp`,
         title: '"Jamas ofrecimos plata a los travestis"',
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Conflicto con Municipio",
@@ -550,7 +550,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso, 13 julio 2005, p.4. Nota que registra la respuesta de la Alcaldesa Reginato ante denuncia de sindicatos de trabajadoras sexuales sobre dinero y capacitación."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/27.webp",
+        src: `${R2}/trabajo-sexual/23.webp`,
         title: "5 travestis muertos por grupo neonazi",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Neonazis",
@@ -560,7 +560,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso, portada, 19 julio 2005. Titular señala que el último fin de semana, la población travesti habría sufrido un nuevo ataque neonazi."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/28.webp",
+        src: `${R2}/trabajo-sexual/24.webp`,
         title: "Cinco muertos por grupo de neonazis",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Neonazis",
@@ -570,7 +570,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso, 19 julio 2005, p. 4. En la nota, Zuliana denuncia ataques reiterados de neonazis y poca credibilidad por parte de las policias. Cuenta sobre ataque que afectó a Michel en zalles céntricas de Viña del Mar."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/29.webp",
+        src: `${R2}/trabajo-sexual/25.webp`,
         title: '"Cada vez que nos pegan nos atienden horrible"',
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Derechos sexuales",
@@ -580,7 +580,7 @@ export const archivoSections: Section[] = [
         descripcion: "Diario El Observador, 14 julio 2006, p. 5. La nota cubre el seminario de prevención del SIDA y revisión de la situación actual de la población trangénera."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/30.webp",
+        src: `${R2}/trabajo-sexual/27.webp`,
         title: "Lider travesti muere después de ser atendida 6 veces en hospital",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Wendy",
@@ -590,7 +590,7 @@ export const archivoSections: Section[] = [
         descripcion: "Recorte de prensa, El Observador, 14 julio 2006, s/p. Noticia sobre supuesta negligencia médica en la atención de Wendy en Hospital Van Buren en Valparaíso."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/31.webp",
+        src: `${R2}/trabajo-sexual/28.webp`,
         title: "Carta a Nelson Avila Senador de la República",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Wendy",
@@ -600,7 +600,7 @@ export const archivoSections: Section[] = [
         descripcion: "Carta de Zuliana Araya de Alianza Trans, de Ximena Soto Sindicato Afrodita y Marcelo Aguilar de Sidacción a Nelson Avila Senador de la República denunciado la discriminación y negligencia médica hacia Wendy en Hospital Carlos Van Buren."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/32.webp",
+        src: `${R2}/trabajo-sexual/29.webp`,
         title: "Oficio de Nélson Avila a Directora del Hospital Carlos Van Buren",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Wendy",
@@ -610,7 +610,7 @@ export const archivoSections: Section[] = [
         descripcion: "Oficio de Nélson Avila a Dafne Secul, Directora del Hospital Carlos Van Buren. Oficio a directora del Hospital Van Buren por caso de Wendy solicitando mayores antecedentes del caso."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/33.webp",
+        src: `${R2}/trabajo-sexual/31.webp`,
         title: "Fotografía de Wendy",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Wendy",
@@ -620,7 +620,7 @@ export const archivoSections: Section[] = [
         descripcion: "En la fotografía se aprecia a Zuliana a la izquierda, compañera no identificada y Wendy a la derecha."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/34.webp",
+        src: `${R2}/trabajo-sexual/32.webp`,
         title: ' Batallón de travestis "atacará" a Unitas',
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Unitas",
@@ -630,7 +630,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso, portada, 1° agosto 2006. Sindicato solicita que les controlen antes no durante la visita de los marinos de Unitas."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/35.webp",
+        src: `${R2}/trabajo-sexual/33.webp`,
         title: "Travestis tienen un batallón listo para esperar a los marinos de la Unitas.",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Unitas",
@@ -640,7 +640,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso, 1° agosto 2006, p. 2. En a nota, Valeria Bustos, entonces presidenta del Sindicato Afrodita, señala su preocupación por los controles policiales a los que pueden ser sometidas cuando llegan los marinos de Unitas."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/36.webp",
+        src: `${R2}/trabajo-sexual/34.webp`,
         title: "¡Travestis con el trasero a dos manos! Temen por el ataque de grupos neonazis.",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Neonazis",
@@ -650,7 +650,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso, 2 agosto 2006, p.5. En la nota, ante la llegada de los marinos de Unitas, las integrantes del sindicato afrodiita manifiestan sus temores ante posibles ataques de grupos neonazis."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/37.webp",
+        src: `${R2}/trabajo-sexual/35.webp`,
         title: 'Diario La Estrella de Valparaíso. Interior: Travestis amenazan con hacerle "turumba" a negritos de la Unitas',
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Unitas",
@@ -660,7 +660,7 @@ export const archivoSections: Section[] = [
         descripcion: "Nota donde Zuliana comparte experiencias con marinos Unitas."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/38.webp",
+        src: `${R2}/trabajo-sexual/36.webp`,
         title: '"Hasta me hicieron perro muerto"',
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Unitas",
@@ -670,7 +670,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso, 5 agosto 2006, p.12. Nota de prensa sobre visita de marinos Unitas a Valparaíso. Entrevista a Zuliana."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/39.webp",
+        src: `${R2}/trabajo-sexual/37.webp`,
         title: "Repudio total al crimen de travesti.",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Champú",
@@ -680,7 +680,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso, portada, 7 agosto 2006. Diario local publica la noticia del asesinato de Viviana, la Champú."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/40.webp",
+        src: `${R2}/trabajo-sexual/39.webp`,
         title: "Descartan acción de neonazis en atroz crimen de travesti",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Champú",
@@ -690,7 +690,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso 7 agosto 2006, p.2-3. La nota señala que según Fiscalía y el sindicato, se descarta que el crimen contra Viviana sea un ataque neonazi."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/41.webp",
+        src: `${R2}/trabajo-sexual/40.webp`,
         title: "Guardia sospechoso n°1 De crimen del travesti",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Champú",
@@ -700,7 +700,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella, portada, 8 agosto 2006 Titular sobre único sospechoso en el crímen de Viviana, la Champú."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/42.webp",
+        src: `${R2}/trabajo-sexual/41.webp`,
         title: "Sospechoso n°1 sería un guardia de supermercado",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Champú",
@@ -710,7 +710,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso, 8 agosto 2006, p. 2-3. Nota periodística que aborda los detalles que se conocen del brutal asesinato a Viviana, la Champú."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/43.webp",
+        src: `${R2}/trabajo-sexual/42.webp`,
         title: "Carta al Alcalde de Valparaíso",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Champú",
@@ -720,7 +720,7 @@ export const archivoSections: Section[] = [
         descripcion: "Carta de Zuliana Araya, Presidenta del Sindicato Afrodita al Alcalde de Valparaíso, Sr. Aldo Cornejo para solicitar apoyo para sepultar a Viviana, la champú."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/44.webp",
+        src: `${R2}/trabajo-sexual/43.webp`,
         title: "Carta a Aldo Cornejo Alcalde de la Municipalidad de Valparaiso",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Champú",
@@ -730,7 +730,7 @@ export const archivoSections: Section[] = [
         descripcion: "Carta de Valeria Bustos Tello, Presidenta del Sindicato Afrodita a Aldo Cornejo Alcalde de la Municipalidad de Valparaiso para agradecer por cesión de terreno para sepultar a Viviana, la Champú."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/45.webp",
+        src: `${R2}/trabajo-sexual/44.webp`,
         title: "Carta a Octavio Salvo.",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Champú",
@@ -740,7 +740,7 @@ export const archivoSections: Section[] = [
         descripcion: "Carta de Valeria Bustos Tello, Presidenta del Sindicato Afrodita a Octavio Salvo en agradecimiento por cesión de terreno para sepultar a Viviana, la Champú"
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/46.webp",
+        src: `${R2}/trabajo-sexual/45.webp`,
         title: "Escabrosos detalles en crimen del travesti",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Champú",
@@ -750,7 +750,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso. portada, 19 agosto 2006."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/47.webp",
+        src: `${R2}/trabajo-sexual/46.webp`,
         title: "Sordidos entretelones del asesinato del travesti",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Champú",
@@ -760,7 +760,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso, 19 agosto 2006, p. 2-3. La nota señala que el ex guardia de supermercado habría discutido y luego asesinado a Viviana, la Champú, por desacuerdos en el pago de los servicios."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/48.webp",
+        src: `${R2}/trabajo-sexual/47.webp`,
         title: "Comunicado de Prensa",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Champú",
@@ -770,7 +770,7 @@ export const archivoSections: Section[] = [
         descripcion: "Denuncia de discriminación por parte del fiscal Claudio Uribe por el trato hacia el caso de Viviana, la Champú."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/49.webp",
+        src: `${R2}/trabajo-sexual/48.webp`,
         title: "Carta a Fiscal Regional",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Champú",
@@ -780,7 +780,7 @@ export const archivoSections: Section[] = [
         descripcion: "Carta de Agrupación Trans hace la Fuerza , firmada por Zuliana Araya a Fiscal Regional, Sr. Jorge Abbot. Denuncia por discriminación del Fiscal a cargo del caso de Viviana, la champú."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/50.webp",
+        src: `${R2}/trabajo-sexual/50.webp`,
         title: "Travestis: La Fiscalía nos discrimina",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Caso Champú",
@@ -790,7 +790,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso, 26 de agosto 2006,  p.5. Zuliana junto a otras compañeras denuncia malos tratos y discriminación por parte del Fiscal a cargo del caso de Viviana, la Champú."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/51.webp",
+        src: `${R2}/trabajo-sexual/51.webp`,
         title: "Ordenanza del Director Regional de Gendarmería de Chile",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Lucha anticarcelaria",
@@ -800,7 +800,7 @@ export const archivoSections: Section[] = [
         descripcion: "Ordenanza del Director Regional de Gendarmería de Chile, región de Valparaíso a Secretario Regional de Justicia. Informe sobre visita del Director del Gendarme a módulo 117 del Complejo Penitenciario de Valparaíso."
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/52.webp",
+        src: `${R2}/trabajo-sexual/52.webp`,
         title: "Ordenanza de Secretario Regional Ministerial de Salud",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Lucha anticarcelaria",
@@ -810,17 +810,18 @@ export const archivoSections: Section[] = [
         descripcion: "Ordenanza 0479 de Secretario Regional Ministerial de Salud, Sr. Fernando Olmedo a Presidenta del Sindicato Afrodita, Sra. Zuliana Araya. Respuesta del Seremi de Salud en relación con la situación de los internos del módulo 117 del Complejo Penitenciario de Valparaíso"
       },
       {
-        src: "/media/archivo-sindical/trabajo-sexual/53.mp4",
+        src: "https://youtu.be/x_nmQ3z46lc",
         title: "Afrodita News",
         serie: "Labor Sindical por el Trabajo Sexual",
         actividad: "Exposición Fuerza Travesti Organizada",
         fecha: "2025",
         lugar: "Valparaiso",
         productor: "Archivo Sindicato Afrodita",
-        descripcion: " Video realizado para la exposición Fuerza Travesti Organizada, 20 de marzo 2025",
-        poster: "/media/archivo-sindical/trabajo-sexual/Barbara.webp",
+        descripcion: "Video realizado para la exposición Fuerza Travesti Organizada, 20 de marzo 2025",
+        poster: `${R2}/trabajo-sexual/Barbara.webp`,
         media: "video"
       },
+
     ],
   },
   {
