@@ -29,6 +29,8 @@ export type Section = {
   images: SectionImage[];
 };
 
+const R2 = "https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/sindicato/sindicato";
+
 // ======== TUS SECCIONES (las dejo tal cual me las pasaste) ========
 export const archivoSections: Section[] = [
   {
@@ -38,7 +40,7 @@ export const archivoSections: Section[] = [
     intro: "Esta sección reúne documentación relativa a la asamblea de socias del Sindicato Afrodita, órgano deliberativo que toma las decisiones de la organización. Reúne documentos que dan cuenta de la constitución, registro y funcionamiento del sindicato Afrodita, e incluye el acta de constitución, los estatutos y documentación vinculada a las sedes del Sindicato Afrodita.",
     images: [
       {
-        src: "/media/archivo-sindical/organizacion-sindical/1.webp",
+        src: `${R2}/organizacion-sindical/1.webp`,
         title: "Casa de Carampangue",
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
@@ -48,7 +50,7 @@ export const archivoSections: Section[] = [
         descripcion:"Clara y Vanessa en la casa de Carampangue donde se realizaron las primeras reuniones del sindicato"
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/2.webp",
+        src: `${R2}/organizacion-sindical/2.webp`,
         title: "Invitación",
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
@@ -58,7 +60,7 @@ export const archivoSections: Section[] = [
         descripcion:" Primera invitación a reunión informativa con la CUT para conformar un sindicato."
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/3.webp",
+        src: `${R2}/organizacion-sindical/3.webp`,
         title: 'Acta de Constitución',
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
@@ -68,7 +70,7 @@ export const archivoSections: Section[] = [
         descripcion:'Acta de constitución del Sindicato de Trabajadoras Independientes Travestis "Afrodita".'
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/4.webp",
+        src: `${R2}/organizacion-sindical/4.webp`,
         title: "Estatutos",
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
@@ -78,7 +80,7 @@ export const archivoSections: Section[] = [
         descripcion:"Estatutos  del Sindicato de Trabajadores Independientes Travestis Afroditas V Región que indican que el sindicato fue fundado en Valparaíso con fecha 22 de agosto del año 2000."
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/5.webp",
+        src: `${R2}/organizacion-sindical/5.webp`,
         title: "Primera directiva del sindicato",
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
@@ -88,7 +90,7 @@ export const archivoSections: Section[] = [
         descripcion:"Fotografía de primera directiva del Sindicato Afrodita de Valparaíso. De izquierda a derecha Meruan, Vanessa y Claudia."
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/6.webp",
+        src: `${R2}/organizacion-sindical/6.webp`,
         title: "Travestis de Valparaíso se convierten en los primeros del país en sindicalizarse",
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
@@ -98,7 +100,7 @@ export const archivoSections: Section[] = [
         descripcion:"Diario La Estrella, 23 agosto 2000. Pag. 13."
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/7.webp",
+        src: `${R2}/organizacion-sindical/7.webp`,
         title: "Circular",
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
@@ -108,7 +110,7 @@ export const archivoSections: Section[] = [
         descripcion:"Circular informativa de la constitución de la organización y los objetivos planteados. "
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/8.webp",
+        src: `${R2}/organizacion-sindical/8.webp`,
         title: 'Carta al Seremi del Trabajo de la V Región',
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
@@ -118,7 +120,7 @@ export const archivoSections: Section[] = [
         descripcion:'Carta firmada por Moises Rebolledo Ponce Presidente Sindicato de Trabajadoras Independientes Travestis "Afrodita" al Sr. José Manuel Mancilla López Seremi de Salud, para solicitarle una audiencia.'
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/9.webp",
+        src: `${R2}/organizacion-sindical/9.webp`,
         title: 'Carta al Alcalde de la Ilustre Municipalidad de Valparaíso',
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
@@ -128,7 +130,7 @@ export const archivoSections: Section[] = [
         descripcion:'Carta de Moises Rebolledo Ponce Presidente, Sr. Meluar Solano Muñoz Secretario y Manuel Orellana Sierra Tesorero del Sindicato de Trabajadoras Independientes Travestis "Afrodita" al Alcalde de la Ilustre Municipalidad de Valparaíso, Hernán Pinto Miranda, solicitando entrevista.'
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/10.webp",
+        src: `${R2}/organizacion-sindical/10.webp`,
         title: 'Carta al Jefe de la Segunda Comisaría Central de Valparaiso',
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
@@ -138,7 +140,7 @@ export const archivoSections: Section[] = [
         descripcion:'Carta de Moises Rebolledo Ponce Presidente, Sr. Meluar Solano Muñoz Secretario y Manuel Orellana Sierra Tesorero del Sindicato de Trabajadoras Independientes Travestis "Afrodita" al Mayor Carlos Cádiz Jefe de la Segunda Comisaría Central de Valparaiso, solicitando entrevista.'
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/11.webp",
+        src: `${R2}/organizacion-sindical/11.webp`,
         title: 'Carta  al Director Regional del Servicio Nacional de Salud de la V Región',
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
@@ -148,7 +150,7 @@ export const archivoSections: Section[] = [
         descripcion:'Carta de Moises Rebolledo Ponce Presidente, Sr. Meluar Solano Muñoz Secretario y Manuel Orellana Sierra Tesorero del Sindicato de Trabajadoras Independientes Travestis "Afrodita" al Director Regional del Servicio Nacional de Salud de Valparaiso - San Antonio V Región, Daniel Verdechiz solicitando entrevista.'
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/12.webp",
+        src: `${R2}/organizacion-sindical/12.webp`,
         title: "Primer carné Sindicato Afrodita",
         serie: "Organización Sindical",
         actividad:'Constitución del sindicato',
@@ -158,7 +160,7 @@ export const archivoSections: Section[] = [
         descripcion:'Carné del Sindicato Afrodita de la socia n°2 Sandra Peña'
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/13.webp",
+        src: `${R2}/organizacion-sindical/13.webp`,
         title: "Socias - inauguración sede Colón",
         serie: "Organización Sindical",
         fecha: "Agosto de 2003",
@@ -167,7 +169,7 @@ export const archivoSections: Section[] = [
         descripcion:'Inaugutación sede Colón - Fundadoras del Sindicato: Paloma, Morin, Zuliana, Cristina, Giovana, Ale, Dayana, Camilo, Patty'
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/14.webp",
+        src: `${R2}/organizacion-sindical/14.webp`,
         title: "Bandera - inauguración sede Colón",
         serie: "Organización Sindical",
         actividad: "Actividades en sede",
@@ -177,7 +179,7 @@ export const archivoSections: Section[] = [
         descripcion:'Zuliana con la primera bandera confeccionada por Pika para una marcha con Gladys Marin del PC Chileno.'
       },
       {
-         src: "/media/archivo-sindical/organizacion-sindical/15.webp",
+         src: `${R2}/organizacion-sindical/15.webp`,
         title: "Bendición Padre Pepo - inauguración sede Colón",
         serie: "Organización Sindical",
         actividad: "Actividades en sede",
@@ -187,7 +189,7 @@ export const archivoSections: Section[] = [
         descripcion:'Ceremonia de inauguración de la sede Colón. De izquierda a derecha: Padre Pepo de la Iglesia La Matriz, Marcelo Aguilar de Acción Gay y Zuliana.'
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/16.webp",
+        src: `${R2}/organizacion-sindical/16.webp`,
         title: "Alcalde - inauguración sede Colón",
         serie: "Organización Sindical",
         actividad: "Actividades en sede",
@@ -197,7 +199,7 @@ export const archivoSections: Section[] = [
         descripcion:'En la fotografía aparece Zuliana junto al alcalde de Valparaíso, Sr. Jorge Castro.'
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/17.webp",
+        src: `${R2}/organizacion-sindical/17.webp`,
         title: "Socias ante lienzo- inauguración sede Colón",
         serie: "Organización Sindical",
         actividad: "Actividades en sede",
@@ -207,7 +209,7 @@ export const archivoSections: Section[] = [
         descripcion:"En la fotografía de izquierda a derecha: Camilo, Zuliana  Yhoana, Denis, Jimena y Alejandro, integrantes de la directiva del momento, de rojo está Tania, en ese momento integrante del sindicato Atheneus. "
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/18.webp",
+        src: `${R2}/organizacion-sindical/18.webp`,
         title: "Travestis inaugiran sede",
         serie: "Organización Sindical",
         actividad: "Actividades en sede",
@@ -217,7 +219,7 @@ export const archivoSections: Section[] = [
         descripcion:"Recorte de prensa s/f, periodico no identificado,  que da cuenta de la inauguración de la sede Colón"
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/19.webp",
+        src: `${R2}/organizacion-sindical/19.webp`,
         title: "Estatutos",
         serie: "Organización Sindical",
         actividad: "Reforma de estatutos",
@@ -227,7 +229,7 @@ export const archivoSections: Section[] = [
         descripcion:" Estatutos que modifican algunos articulos y formalizan el cambio de nombre de la organización"
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/20.webp",
+        src: `${R2}/organizacion-sindical/20.webp`,
         title: "Jornadas de trabajo en sede de la organización",
         serie: "Organización Sindical",
         actividad: "Actividades en sede",
@@ -237,7 +239,7 @@ export const archivoSections: Section[] = [
         descripcion:"Fotogragía de integrantes del sindicato, en primera linea Clara, Vanesa, Zuliana, Valeria. Atrás se ve el lienzo del Sindicato de Trabajadoras Independientes Travestis Afrodita"
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/21.webp",
+        src: `${R2}/organizacion-sindical/21.webp`,
         title: "Travestis piden casa fiscal y CORES dicen ¡No, hacen puras cochinadas!",
         serie: "Organización Sindical",
         actividad: "Gestiones por sede Avenida España",
@@ -247,7 +249,7 @@ export const archivoSections: Section[] = [
         descripcion:"Recorte de prensa s/f, periodico no identificado, sobre la solicitud a Bienes Nacionales de una propiedad para ser usada como sede social"
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/22.webp",
+        src: `${R2}/organizacion-sindical/22.webp`,
         title: "Conferencia de prensa - inauguración sede Av. España",
         serie: "Organización Sindical",
         actividad: "Inauguración sede Avenida España",
@@ -257,7 +259,7 @@ export const archivoSections: Section[] = [
         descripcion:'Inauguración de la sede de Avenida España. En la fotografía se aprecia a Valeria en el patio trasero junto a diversas autoridades.'
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/23.webp",
+        src: `${R2}/organizacion-sindical/23.webp`,
         title: "Valeria Bustos y  Marcelo Aguilar - inauguración sede Av. España",
         serie: "Organización Sindical",
         actividad: "Inauguración sede Avenida España",
@@ -267,7 +269,7 @@ export const archivoSections: Section[] = [
         descripcion: "Inauguración de la sede de Avenida España. En la fotografía se aprecia a Valeria, Marcelo Aguilar, autoridades y prensa."
       },
       {
-        src: "/media/archivo-sindical/organizacion-sindical/24.mp4",
+        src: `${R2}/organizacion-sindical/24.mp4`,
         title: "Sindicalilzar la esquina",
         serie: "Organización Sindical",
         actividad: "Exposición Fuerza Travesti Organizada",
@@ -275,7 +277,7 @@ export const archivoSections: Section[] = [
         lugar: "Valparaiso",
         productor:"Archivo Sindicato Afrodita- Editado por Lucas Disalvo",
         descripcion:"Video de la historia del Sindicato Afrodita, realización de Lucas M. Disalvo",
-        poster: "/media/archivo-sindical/organizacion-sindical/27.png",
+        poster: `${R2}/organizacion-sindical/27.png`,
         media: "video"
       },
     ],
