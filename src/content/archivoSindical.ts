@@ -37,7 +37,7 @@ export const archivoSections: Section[] = [
   {
     slug: "organizacion-sindical",
     title: "Organización Sindical",
-    cover: "/media/archivo-sindical/org.jpg",
+    cover: `${R2}/organizacion-sindical/10.webp`,
     intro: "Esta sección reúne documentación relativa a la asamblea de socias del Sindicato Afrodita, órgano deliberativo que toma las decisiones de la organización. Reúne documentos que dan cuenta de la constitución, registro y funcionamiento del sindicato Afrodita, e incluye el acta de constitución, los estatutos y documentación vinculada a las sedes del Sindicato Afrodita.",
     images: [
       {
@@ -278,6 +278,7 @@ export const archivoSections: Section[] = [
         lugar: "Valparaiso",
         productor: "Archivo Sindicato Afrodita- Editado por Lucas Disalvo",
         descripcion: "Video de la historia del Sindicato Afrodita, realización de Lucas M. Disalvo",
+        poster: `${R2}/organizacion-sindical/30.webp`,
         media: "video"
       },
     ],
