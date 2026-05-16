@@ -40,7 +40,7 @@ export const archivoSections: Section[] = [
     intro: "Esta sección reúne documentación relativa a la asamblea de socias del Sindicato Afrodita, órgano deliberativo que toma las decisiones de la organización. Reúne documentos que dan cuenta de la constitución, registro y funcionamiento del sindicato Afrodita, e incluye el acta de constitución, los estatutos y documentación vinculada a las sedes del Sindicato Afrodita.",
     images: [
       {
-        src: `${R2}/organizacion-sindical/1.webp`,
+        src: `https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/organizacion-sindical/1.webp`,
         title: "Casa de Carampangue",
         serie: "Organización Sindical",
         actividad: "Constitución del Sindicato",
