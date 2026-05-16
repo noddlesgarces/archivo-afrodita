@@ -15,7 +15,8 @@ const nextConfig = {
       { protocol: "https", hostname: "cdn.shopify.com", pathname: "/**" },
       { protocol: "https", hostname: "tobyleon.com", pathname: "/**" },
       { protocol: "https", hostname: "media.vogue.mx", pathname: "/**" },
-    { protocol: "https", hostname: "tobyleon.com", pathname: "/**" }
+      { protocol: "https", hostname: "tobyleon.com", pathname: "/**" },
+      { protocol: "https", hostname: "pub-60ba8de670c44a5ba2f735f42b706058.r2.dev", pathname: "/**" }
     ],
     deviceSizes: [360, 640, 768, 1024, 1280, 1536, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384]
