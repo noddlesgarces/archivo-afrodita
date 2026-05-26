@@ -1,13 +1,13 @@
-"use client";
-
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function SplashPage() {
   const router = useRouter();
+  const [mounted, setMounted] = useState(false);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const timer = setTimeout(() => setVisible(true), 300);
     return () => clearTimeout(timer);
   }, []);
@@ -15,6 +15,11 @@ export default function SplashPage() {
   const handleIngresar = () => {
     router.push("/home");
   };
+
+  // Retorno prematuro durante la hidratación del lado del servidor
+  if (!mounted) {
+    return <div style={{ background: "#0a0a0a", position: "fixed", inset: 0 }} />;
+  }
 
   return (
     <div className="splash-root">
