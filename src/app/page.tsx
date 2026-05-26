@@ -1,133 +1,142 @@
-import Navigation from "@/components/navigation";
-import Link from "next/link";
-import Image from "next/image";
+"use client";
 
-export default function HomePage() {
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+
+export default function SplashPage() {
+  const router = useRouter();
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setVisible(true), 300);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleIngresar = () => {
+    router.push("/home");
+  };
+
   return (
-    <div className="min-h-screen bg-neutral-50">
-      <Navigation />
+    <div className="splash-root">
+      {/* Imagen de fondo con animación Ken Burns */}
+      <div className="splash-bg" />
 
-      {/* Hero Section */}
-      <main className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 py-16 lg:py-24">
-          {/* Imagen principal */}
-          <div className="fade-in">
-            <div className="aspect-[4/5] relative overflow-hidden bg-neutral-100">
-              <Image
-                src="/media/home/1.jpg"
-                alt="Archivo de memoria cultural"
-                fill
-                className="object-cover filter grayscale hover:grayscale-0 transition-all duration-700"
-                priority
-              />
-            </div>
-          </div>
+      {/* Overlay oscuro */}
+      <div className="splash-overlay" />
 
-          {/* Texto introductorio */}
-          <div className="flex flex-col justify-center fade-in">
-            <div className="prose-editorial">
-              <h1 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900 mb-8 text-balance">
-                ARCHIVO SINDICATO AFRODITA
-              </h1>
+      {/* Contenido */}
+      <div className={`splash-content ${visible ? "splash-visible" : ""}`}>
+        <p className="splash-eyebrow">Archivo Histórico</p>
+        <h1 className="splash-title">Sindicato<br />Afrodita</h1>
+        <div className="splash-divider" />
+        <button className="splash-btn" onClick={handleIngresar}>
+          Ingresar
+        </button>
+      </div>
 
-              <p className="text-lg leading-relaxed mb-6">
-                El Sindicato de Trabajadoras Independientes Travestis Afrodita, se conformó el 23 de agosto del año 2000 
-                en la ciudad de Valparaíso (Chile) con el objeto de defender el derecho a ejercer el trabajo sexual y 
-                contribuir a construir las condiciones de una vida digna para el colectivo travesti-trans. 
-              </p>
+      <style jsx>{`
+        .splash-root {
+          position: fixed;
+          inset: 0;
+          overflow: hidden;
+          background: #0a0a0a;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
 
-              <p className="mb-6">
-                Su archivo está compuesto por dos grandes secciones: el Archivo Sindical y los Fondos Personales de 
-                quienes lo han integrado desde sus inicios hasta el presente. A su vez, resguarda testimonios orales como 
-                complemento del Archivo documental.  
-              </p>
+        .splash-bg {
+          position: absolute;
+          inset: -10%;
+          background-image: url('PLACEHOLDER_URL');
+          background-size: cover;
+          background-position: center;
+          filter: grayscale(60%) brightness(0.5);
+          animation: kenburns 20s ease-in-out infinite alternate;
+        }
 
-              <p className="mb-8">
-                Este sitio Web socializa parte de ese acervo documental para ponerlo en acceso a la comunidad 
-              travesti-trans y al público en general. 
-              </p>
+        @keyframes kenburns {
+          0% {
+            transform: scale(1) translate(0, 0);
+          }
+          100% {
+            transform: scale(1.15) translate(-2%, -2%);
+          }
+        }
 
-              <div className="pt-6">
-                <Link
-                  href="/archivo"
-                  className="inline-flex items-center px-6 py-3 text-sm font-medium text-neutral-50 bg-neutral-900 hover:bg-neutral-700 transition-colors"
-                >
-                  Explorar el Archivo
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        .splash-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0.6) 60%,
+            rgba(0, 0, 0, 0.85) 100%
+          );
+        }
 
-        {/* Secciones principales */}
-        <section className="py-16 lg:py-24 border-t border-neutral-200">
-          <h2 className="text-2xl font-serif font-semibold text-neutral-900 mb-12 text-center">
-            Secciones del Archivo
-          </h2>
+        .splash-content {
+          position: relative;
+          z-index: 10;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1.5rem;
+          opacity: 0;
+          transform: translateY(24px);
+          transition: opacity 1.2s ease, transform 1.2s ease;
+        }
 
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-4xl mx-auto">
-            {/* Archivo */}
-            <Link href="/archivo" className="group">
-              <div className="aspect-[3/2] relative overflow-hidden bg-neutral-100 mb-4">
-                <Image
-                  src="/media/home/2.jpg"
-                  alt="Archivo de documentos"
-                  fill
-                  className="object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
-                />
-              </div>
-              <h3 className="text-xl font-serif font-medium text-neutral-900 mb-2 group-hover:text-neutral-600 transition-colors">
-                Archivo Sindical
-              </h3>
-              <p className="text-sm text-neutral-600 leading-relaxed">
-                El Fondo Sindical del Archivo Histórico del Sindicato Afrodita está conformado por cerca de 1250 documentos físicos.
-              </p>
-            </Link>
+        .splash-visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
 
-            {/* Cronología */}
-            <Link href="/cronologia" className="group">
-              <div className="aspect-[3/2] relative overflow-hidden bg-neutral-100 mb-4">
-                <Image
-                  src="/media/home/3.jpg"
-                  alt="Línea de tiempo"
-                  fill
-                  className="object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
-                />
-              </div>
-              <h3 className="text-xl font-serif font-medium text-neutral-900 mb-2 group-hover:text-neutral-600 transition-colors">
-                Cronología
-              </h3>
-              <p className="text-sm text-neutral-600 leading-relaxed">
-                Recorrido histórico del Sindicato Afrodita desde su fundación hasta la actualidad.
-              </p>
-            </Link>
-          </div>
-        </section>
+        .splash-eyebrow {
+          font-family: 'Georgia', serif;
+          font-size: 0.75rem;
+          letter-spacing: 0.3em;
+          text-transform: uppercase;
+          color: rgba(255, 255, 255, 0.5);
+          margin: 0;
+        }
 
-        {/* Footer info */}
-        <footer className="py-12 border-t border-neutral-200 bg-white">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-              
-              {/* Logo institucional */}
-              <div className="flex-shrink-0">
-                <Image
-                  src="/media/home/4.png"
-                  alt="Gobierno de Chile"
-                  width={260}
-                  height={130}
-                  className="object-contain"
-                />
-              </div>
+        .splash-title {
+          font-family: 'Georgia', serif;
+          font-size: clamp(3rem, 8vw, 6rem);
+          font-weight: 400;
+          color: #ffffff;
+          line-height: 1.1;
+          margin: 0;
+          letter-spacing: -0.01em;
+        }
 
-              {/* Texto */}
-              <p className="text-sm text-neutral-500 text-center md:text-right">
-                Proyecto financiado por el Fondo Nacional de Desarrollo Cultural y las Artes (FONDART)
-              </p>
-            </div>
-          </div>
-        </footer>
-      </main>
+        .splash-divider {
+          width: 40px;
+          height: 1px;
+          background: rgba(255, 255, 255, 0.3);
+        }
+
+        .splash-btn {
+          font-family: 'Georgia', serif;
+          font-size: 0.8rem;
+          letter-spacing: 0.25em;
+          text-transform: uppercase;
+          color: #ffffff;
+          background: transparent;
+          border: 1px solid rgba(255, 255, 255, 0.4);
+          padding: 0.85rem 2.5rem;
+          cursor: pointer;
+          transition: background 0.3s ease, border-color 0.3s ease;
+          margin-top: 0.5rem;
+        }
+
+        .splash-btn:hover {
+          background: rgba(255, 255, 255, 0.1);
+          border-color: rgba(255, 255, 255, 0.8);
+        }
+      `}</style>
     </div>
   );
 }

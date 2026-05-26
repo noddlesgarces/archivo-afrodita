@@ -5,8 +5,8 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const navigation = [
-  { name: "Inicio", href: "/" },
-  { name: "Archivo Sindical", href: "/archivo" },
+  { name: "Inicio", href: "/home" },
+  { name: "Fondo Sindical", href: "/archivo" },
   { name: "Fondos Personales", href: "/fondos-personales" },
   { name: "Cronología", href: "/cronologia" },
   { name: "Actualidad", href: "/actualidad" },
