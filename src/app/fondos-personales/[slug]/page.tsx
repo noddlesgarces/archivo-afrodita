@@ -49,6 +49,13 @@ export default function FondoPersonalPage({
         <h1 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-10 uppercase tracking-wide">
           Fondo {fondo.nombre} {fondo.apellido}
         </h1>
+        
+        {/* Bio */}
+        {fondo.bio && (
+          <p className="text-lg text-neutral-600 leading-relaxed max-w-3xl mb-10">
+            {fondo.bio}
+          </p>
+        )}
 
         {/* Foto principal + Video */}
         <div className="grid lg:grid-cols-2 gap-10 mb-16">
