@@ -827,11 +827,11 @@ export const archivoSections: Section[] = [
   {
     slug: "actividades-ciclicas",
     title: "Actividades Cíclicas",
-    cover: "/media/archivo-sindical/ac.jpg",
+    cover: `${R2}/actividades-ciclicas/14.webp`,
     intro: "Esta sección reúne documentación de las actividades cíclicas que el Sindicato Afrodita  ha realizado regularmente a lo largo del tiempo, como parte de su funcionamiento y objetivos.  La organización de platos únicos, las ramadas, la celebración de navidades, el certámen de belleza Miss Afrodita, han sido actividades estaban destinadas a reunir fondos propios y a crear instancias de sociabilidad y encuentro para la comunidad travesti-trans.",
     images: [
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/1.webp",
+        src: `${R2}/actividades-ciclicas/11.webp`,
         title: "Carta al Alcalde Hernan Pinto",
         serie: "Actividades cíclicas",
         actividad: "Plato único",
@@ -841,7 +841,7 @@ export const archivoSections: Section[] = [
         descripcion: "Carta de solicitud de permiso para realizar plato único en Canciani, evento de recaudación de dinero."
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/2.webp",
+        src: `${R2}/actividades-ciclicas/13.webp`,
         title: "Plato único - Canciani",
         serie: "Actividades cíclicas",
         actividad: "Plato único",
@@ -851,7 +851,7 @@ export const archivoSections: Section[] = [
         descripcion: "Espectáculo que animaba al plato único realizado en Canciani en Valparaíso."
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/3.webp",
+        src: `${R2}/actividades-ciclicas/14.webp`,
         title: "Maciel - Canciani",
         serie: "Actividades cíclicas",
         actividad: "Plato único",
@@ -861,7 +861,7 @@ export const archivoSections: Section[] = [
         descripcion: "Espectáculo en el plato único realizado en Canciani en Valparaíso. En la fotografía Masiel."
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/4.webp",
+        src: `${R2}/actividades-ciclicas/15.webp`,
         title: "Nicole - Canciani",
         serie: "Actividades cíclicas",
         actividad: "Plato único",
@@ -871,7 +871,7 @@ export const archivoSections: Section[] = [
         descripcion: "Momento bailable del plato único en Canciani. En la fotografía se puede apreciar a Nicole."
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/5.webp",
+        src: `${R2}/actividades-ciclicas/16.webp`,
         title: "Ramada travesti es un éxito en parque Alejo Barrios",
         serie: "Actividades cíclicas",
         actividad: "Ramadas",
@@ -881,7 +881,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso, 20 de septiembre de 2003, p.16. Nota sobre la primera ramada del sindicato Afrodita en el Parque Alejo Barrios en Valparaíso."
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/6.webp",
+        src: `${R2}/actividades-ciclicas/17.webp`,
         title: "Travestis fueron los que más vendieron",
         serie: "Actividades cíclicas",
         actividad: "Ramadas",
@@ -891,7 +891,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Diario La Estrella de Valparaíso, 22 de septiembe de 2003, p. 12. "Nota sobre el éxito de la primera ramada travesti en el Alejo Barrío de Valparaíso.'
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/7.webp",
+        src: `${R2}/actividades-ciclicas/18.webp`,
         title: 'Travestis tendrán su propia ramada y se llamará "Machos, machos, machos menos"',
         serie: "Actividades cíclicas",
         actividad: "Ramadas",
@@ -901,7 +901,7 @@ export const archivoSections: Section[] = [
         descripcion: "La Estrella de Valparaíso, 16 de septiembe de 2003, p.5. La nota hace un llamado de Zuliana a visitar la primera ramada travesti en el Alejo Barrio."
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/8.webp",
+        src: `${R2}/actividades-ciclicas/19.webp`,
         title: "Carta a Alcalde de la Municipalidad de Viña del Mar",
         serie: "Actividades cíclicas",
         actividad: "Navidades",
@@ -911,7 +911,7 @@ export const archivoSections: Section[] = [
         descripcion: "Carta de Zuliana Araya, Presidenta del Sindicato Afrodita de Valparaíso a Sr. Jorge Kaplan Meyer, alcalde de la Municipalidad de Viña del Mar, solicitando aportes para celebrar la navidad con las socias y sus sobrinos."
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/9.webp",
+        src: `${R2}/actividades-ciclicas/20.webp`,
         title: "Ramadas 2004",
         serie: "Actividades cíclicas",
         actividad: "Ramadas",
@@ -921,7 +921,7 @@ export const archivoSections: Section[] = [
         descripcion: "Espectáculo en ramada  del Parque Alejo Barrio, Valparaíso. Aparecen en la fotografía Pirilacha, Rumpy, Zuliana y Jiohana"
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/10.webp",
+        src: `${R2}/actividades-ciclicas/1.webp`,
         title: "Ramada 2004 - 2",
         serie: "Actividades cíclicas",
         actividad: "Ramadas",
@@ -931,7 +931,7 @@ export const archivoSections: Section[] = [
         descripcion: "Ramada en Alejo Barrio, Valparaíso. En ella aparece Ramón Raman, Zuliana y Marisela."
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/11.webp",
+        src: `${R2}/actividades-ciclicas/2.webp`,
         title: "Ramada 2004 - 3",
         serie: "Actividades cíclicas",
         actividad: "Ramadas",
@@ -941,7 +941,7 @@ export const archivoSections: Section[] = [
         descripcion: "Grupo de compañeras en la ramada del Parque Alejo Barrio en Valparaíso. En la fotografía aparecen Ximena, Zuliana y Maricela."
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/12.webp",
+        src: `${R2}/actividades-ciclicas/3.webp`,
         title: "Celebración Navidad",
         serie: "Actividades cíclicas",
         actividad: "Navidad",
@@ -951,7 +951,7 @@ export const archivoSections: Section[] = [
         descripcion: "Celebración de la navidad en la sede Colón del Sindicato Afrodita. De izquierda a derecha: Johana, Ximena, Nicol, Andrea."
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/13.webp",
+        src: `${R2}/actividades-ciclicas/4.webp`,
         title: "Celebracion Navidad - 2",
         serie: "Actividades cíclicas",
         actividad: "Navidad",
@@ -961,7 +961,7 @@ export const archivoSections: Section[] = [
         descripcion: "Celebración de navidad en la sede Colón del Sindicato Afrodita. En la fotografía aparece Zuliana junto al árbol."
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/14.webp",
+        src: `${R2}/actividades-ciclicas/5.webp`,
         title: "Celebración Navidad - 3",
         serie: "Actividades cíclicas",
         actividad: "Navidad",
@@ -971,7 +971,7 @@ export const archivoSections: Section[] = [
         descripcion: "Panorámica de la celebración de la navidad en la sede del Sindicato Afrodita.  Aparecen Paty, Cintya,  Brau, Tito, Cler, Ximena, Yhoana, Nicol y Marisela."
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/15.webp",
+        src: `${R2}/actividades-ciclicas/6.webp`,
         title: "Celebración Navidad - 4",
         serie: "Actividades cíclicas",
         actividad: "Navidad",
@@ -981,7 +981,7 @@ export const archivoSections: Section[] = [
         descripcion: "Mesa navideña en sede del Sindicato Afrodita."
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/16.webp",
+        src: `${R2}/actividades-ciclicas/7.webp`,
         title: "Celebración Navidad - 5",
         serie: "Actividades cíclicas",
         actividad: "Navidad",
@@ -991,7 +991,7 @@ export const archivoSections: Section[] = [
         descripcion: "Mesa navideña en sede del Sindicato Afrodita."
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/17.webp",
+        src: `${R2}/actividades-ciclicas/8.webp`,
         title: "Carta a Alcalde de Valparaíso",
         serie: "Actividades cíclicas",
         actividad: "Navidad",
@@ -1001,7 +1001,7 @@ export const archivoSections: Section[] = [
         descripcion: "Carta de Ximena Soto, secretaria del Sindicato Afrodita al Alcalde de Valparaíso a Sr. Jorge Castro  solicitando apoyo para celebrar Navidad con sobrinos y pequeños."
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/18.webp",
+        src: `${R2}/actividades-ciclicas/9.webp`,
         title: "Miss Afrodita",
         serie: "Actividades cíclicas",
         actividad: "Miss Trans",
@@ -1011,7 +1011,7 @@ export const archivoSections: Section[] = [
         descripcion: "Coronación de Miss Transgénero Afrodita. En la fotografía aparecen Alexandra, Juliana, Zuliana y Luna Dimauri, en segundo plano Marcelo."
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/19.webp",
+        src: `${R2}/actividades-ciclicas/10.webp`,
         title: "A todo trapo fue la elección de nueva reina porteña de Miss Afrodita 2011",
         serie: "Actividades cíclicas",
         actividad: "Miss Trans",
@@ -1021,7 +1021,7 @@ export const archivoSections: Section[] = [
         descripcion: "Recorte de prensa s/f, periodico no identificado, Gran evento para elegir a la nueva Miss Afrodita 2011."
       },
       {
-        src: "/media/archivo-sindical/actividades-ciclicas/20.webp",
+        src: `${R2}/actividades-ciclicas/12.webp`,
         title: "Fonderos se pelean por ser vecinos de travestis",
         serie: "Actividades cíclicas",
         actividad: "Ramadas",
@@ -1039,7 +1039,7 @@ export const archivoSections: Section[] = [
     intro: "Documentación de articulaciones, encuentros, marchas y colaboraciones con diversas organizaciones trans y aliadas en Valparaíso y Santiago entre 2002 y 2015.",
     images: [
       {
-        src: "/media/archivo-sindical/alianzas-trans/1.webp",
+        src: `${R2}/alianzas-trans/11.webp`,
         title: 'Comunidad Gay recordó a victimas de la discoteca Divine',
         serie: "Alianzas Políticas",
         actividad: "Marchas",
@@ -1049,7 +1049,7 @@ export const archivoSections: Section[] = [
         descripcion: 'El Mercurio de Valparaiso, 5 de septiembe de 2002, p. 7. Conmemoración incendio de la Disco Divine, piden reapertura del caso.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/2.webp",
+        src: `${R2}/alianzas-trans/22.webp`,
         title: "Travestis porteños desfilan en santiago.",
         serie: "Alianzas Políticas",
         actividad: "Marchas",
@@ -1059,7 +1059,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Diario La Estrella de Valparaíso,27 de septiembre de 2003, p. 4. Más de veinte integrantes viajan a participar de la Marcha del Orgullos en Santiago.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/3.webp",
+        src: `${R2}/alianzas-trans/3.webp`,
         title: "Reunión entre dirigentas de diversas organizaciones trans.",
         serie: "Alianzas Políticas",
         actividad: "Articulaciones",
@@ -1069,7 +1069,7 @@ export const archivoSections: Section[] = [
         descripcion: 'En la fotografía junto a Zuliana se puede apreciar a compañeras de  la Agrupación Corazones Solidarios de Quillota'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/4.webp",
+        src: `${R2}/alianzas-trans/4.webp`,
         title: "Marcha en Santiago",
         serie: "Actividades cíclicas",
         actividad: "Marcha",
@@ -1079,7 +1079,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Marcha en defensa de las diversidades en el marco de un encuentro de organizaciones en el centro de Santiago sosteniendo un lienzo en favor de las diversidades sexuales.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/5.webp",
+        src: `${R2}/alianzas-trans/5.webp`,
         title: "Comunicado en apoyo a Karen Atala",
         serie: "Actividades cíclicas",
         actividad: "Articulaciones",
@@ -1089,7 +1089,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Comunicado en conjunto con Católicas por el Derecho a Decidir, Batucada Kanaima, Sindicato Afrodita y Corporación Chilena de Prevención del SIDA en apoyo por fallo en contra a la jueza Karen Atala respecto a la tenencia de sus hijas por su orientación sexual.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/6.webp",
+        src: `${R2}/alianzas-trans/6.webp`,
         title: "Segundo Encuentro Transgénero de Valparaíso.",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1099,7 +1099,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Compañeras reunidas en el Primer Encuentro Transgénero en Valparaíso. En la fotografía es posible reconocer a Alejandra y Krishna.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/7.webp",
+        src: `${R2}/alianzas-trans/7.webp`,
         title: "Segundo Encuentro Transgénero de Valparaíso. - 2",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1109,7 +1109,7 @@ export const archivoSections: Section[] = [
         descripcion: 'En el Primer Encuentro Transgénero en Valparaíso. En la fotografía, Patricia y Krishna de Amanda Jofré.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/8.webp",
+        src: `${R2}/alianzas-trans/8.webp`,
         title: "Segundo Encuentro Transgenero de Valparaiso - 3",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1119,7 +1119,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Colaboración de diversas organizaciones trans, en la fotografía Ximena,la Yayo y Valeria.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/9.webp",
+        src: `${R2}/alianzas-trans/9.webp`,
         title: "Segundo Encuentro Transgenero de Valparaiso - 4",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1129,7 +1129,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Preparación del Segundo Encuentro Trans en Chile.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/10.webp",
+        src: `${R2}/alianzas-trans/10.webp`,
         title: "Segundo Encuentro Transgenero de Chile - 5",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1139,7 +1139,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Compañeras de diversas organizaciones participando del Encuentro Trans en Valparaíso.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/11.webp",
+        src: `${R2}/alianzas-trans/11.webp`,
         title: "Congreso Nancional de Organizaciones Transfeministas",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1149,7 +1149,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Tríptico con información sobre el Congreso Nacional de Organizaciones Transfemeninas.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/12.webp",
+        src: `${R2}/alianzas-trans/12.webp`,
         title: "Congreso Nancional de Organizaciones Transfeministas",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1159,7 +1159,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Tríptico con información sobre el Congreso Nacional de Organizaciones Transfemeninas.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/13.webp",
+        src: `${R2}/alianzas-trans/13.webp`,
         title: "Congreso Transfeminista en Universidad Arcis",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1169,7 +1169,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Panel del Congreso Nacional de Organizaciones Transfemeninas realizado en Universidad Arcis en sede Libertad.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/14.webp",
+        src: `${R2}/alianzas-trans/14.webp`,
         title: "Arriba del camión durante marcha en Santiago.",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1179,7 +1179,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Espectáculo artístico en el Congreso Nacional de Organizaciones Transfemeninas realizado en Universidad Arcis en sede Libertad.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/15.webp",
+        src: `${R2}/alianzas-trans/15.webp`,
         title: "Viaje a marcha del orgullo en Santiago",
         serie: "Actividades cíclicas",
         actividad: "Marcha",
@@ -1189,7 +1189,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Compañeras en viaje de Valparaíso a Santiago para participar de la marcha por el orgullo, disfrazadas de Afrdotia, durante la presidencia de Valeria Bustos. Se puede distinguir en primer plano a Marisela.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/16.webp",
+        src: `${R2}/alianzas-trans/16.webp`,
         title: "Arriba del camión en la marcha de Santiago",
         serie: "Actividades cíclicas",
         actividad: "Marcha",
@@ -1199,7 +1199,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Bailando en marcha por el orgullo en Santiago. En la fotografía se puede apreciar a Marisela.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/17.webp",
+        src: `${R2}/alianzas-trans/17.webp`,
         title: "Escenario marcha del orgullo",
         serie: "Actividades cíclicas",
         actividad: "Marcha",
@@ -1209,7 +1209,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Zuliana, Abigail y Camila sobre el escenario prinicpal de la marcha por el orgullo. En manos de Zuliana se aprecia cartel que señala "Fin al 373"'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/18.webp",
+        src: `${R2}/alianzas-trans/18.webp`,
         title: "Marcha del orgullo en Santiago",
         serie: "Actividades cíclicas",
         actividad: "Marcha",
@@ -1219,7 +1219,7 @@ export const archivoSections: Section[] = [
         descripcion: 'En la marcha por el orgullo en Santiago. Se puede apreciar a Sandra Peña, Guajachi, Pty, Susy Cuatro y Ximena.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/19.webp",
+        src: `${R2}/alianzas-trans/19.webp`,
         title: "Marcha del orgullo en Santiago - 2",
         serie: "Actividades cíclicas",
         actividad: "Marcha",
@@ -1229,7 +1229,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Compañeras bailan sobre el carro alegórico en Marcha del Orgullo.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/20.webp",
+        src: `${R2}/alianzas-trans/20.webp`,
         title: "Marcha del orgullo en Santiago - 3",
         serie: "Actividades cíclicas",
         actividad: "Encuentros Trans",
@@ -1239,7 +1239,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Compañeras bailan sobre el carro alegórico en Marcha del Orgullo.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/21.webp",
+        src: `${R2}/alianzas-trans/21.webp`,
         title: "Bus de regreso a Valparaiso",
         serie: "Actividades cíclicas",
         actividad: "Encuentros Trans",
@@ -1249,7 +1249,7 @@ export const archivoSections: Section[] = [
         descripcion: 'De regreso a Valparaíso después de participar de la Marcha por el Orgullo en Santiago.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/22.webp",
+        src: `${R2}/alianzas-trans/22.webp`,
         title: "Segundo Encuentro Transgenero de Chile",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1259,7 +1259,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Planificación del Segundo Encuentro Trans en Chile.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/23.webp",
+        src: `${R2}/alianzas-trans/23.webp`,
         title: "Segundo Encuentro Transgenero de Chile - 2",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1269,7 +1269,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Material de trabajo para el 2° Encuentro Nacional Trans.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/24.webp",
+        src: `${R2}/alianzas-trans/24.webp`,
         title: ' "Bolocazzo" encendió carnaval gay de Valparaíso',
         serie: "Alianzas Políticas",
         actividad: "Marchas",
@@ -1279,7 +1279,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Las Últimas Noticias. 29 de junio de 2007, s/p. Nota sobre primera marcha con desfile en Valparaíso.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/25.webp",
+        src: `${R2}/alianzas-trans/25.webp`,
         title: "En Marcha por el Orgullo en Valparaíso",
         serie: "Alianzas Políticas",
         actividad: "Marchas",
@@ -1289,7 +1289,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Paulina Kournikova en la Marcha del Orgullo en Valparaíso.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/26.webp",
+        src: `${R2}/alianzas-trans/26.webp`,
         title: "En Marcha por el Orgullo en Valparaíso - 2",
         serie: "Alianzas Políticas",
         actividad: "Marchas",
@@ -1299,7 +1299,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Paulina Kournikova en la Marcha del Orgullo en Valparaíso.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/27.webp",
+        src: `${R2}/alianzas-trans/27.webp`,
         title: "En Marcha por el Orgullo en Valparaíso - 3",
         serie: "Alianzas Políticas",
         actividad: "Marchas",
@@ -1309,7 +1309,7 @@ export const archivoSections: Section[] = [
         descripcion: 'En la fotografía, entre otros, aparece Ziuliana, Marcelo Aguilar de Acción Gay y la concejala Laura Soto.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/28.webp",
+        src: `${R2}/alianzas-trans/28.webp`,
         title: "En Marcha por el Orgullo en Valparaíso - 4",
         serie: "Alianzas Políticas",
         actividad: "Marchas",
@@ -1319,7 +1319,7 @@ export const archivoSections: Section[] = [
         descripcion: 'En la fotografía aparece Ziuliana, Marcelo Aguilar de Acción Gay y la concejala Laura Soto.'
       },
       {
-        src: "/media/archivo-sindical/alianzas-trans/29.webp",
+        src: `${R2}/alianzas-trans/29.webp`,
         title: "Protocolo de colaboración",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",

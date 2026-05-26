@@ -36,7 +36,7 @@ function thumbFor(img: { src: string; media?: string; poster?: string }) {
 export default function ArchivoPage() {
   const [q, setQ] = useState("");
 
-  // ✅ CORREGIDO: Ya no usamos normalizeSection, lo hacemos directamente aquí
+  //  Ya no usamos normalizeSection, lo hacemos directamente aquí
   const sectionsNormalized = useMemo<Section[]>(() => {
     return archivoSections.map((section) => ({
       ...section,
@@ -97,7 +97,7 @@ export default function ArchivoPage() {
         {/* Header (misma estructura que te gustaba) */}
         <div className="mb-12 fade-in">
           <h1 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900 mb-6">
-            Archivo Sindical
+            Fondo Sindical
           </h1>
           <p className="text-lg text-neutral-600 leading-relaxed max-w-3xl">
             El Fondo Sindical del Archivo Histórico del Sindicato Afrodita está conformado por cerca de 1250 
