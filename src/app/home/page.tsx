@@ -31,20 +31,20 @@ export default function HomePage() {
               </h1>
 
               <p className="text-lg leading-relaxed mb-6">
-                El Sindicato de Trabajadoras Independientes Travestis Afrodita, se conformó el 23 de agosto del año 2000 
-                en la ciudad de Valparaíso (Chile) con el objeto de defender el derecho a ejercer el trabajo sexual y 
-                contribuir a construir las condiciones de una vida digna para el colectivo travesti-trans. 
+                El Sindicato de Trabajadoras Independientes Travestis Afrodita, se conformó el 23 de agosto del año 2000
+                en la ciudad de Valparaíso (Chile) con el objeto de defender el derecho a ejercer el trabajo sexual y
+                contribuir a construir las condiciones de una vida digna para el colectivo travesti-trans.
               </p>
 
               <p className="mb-6">
-                Su archivo está compuesto por dos grandes secciones: el Archivo Sindical y los Fondos Personales de 
-                quienes lo han integrado desde sus inicios hasta el presente. A su vez, resguarda testimonios orales como 
-                complemento del Archivo documental.  
+                Su archivo está compuesto por dos grandes secciones: el Archivo Sindical y los Fondos Personales de
+                quienes lo han integrado desde sus inicios hasta el presente. A su vez, resguarda testimonios orales como
+                complemento del Archivo documental.
               </p>
 
               <p className="mb-8">
-                Este sitio Web socializa parte de ese acervo documental para ponerlo en acceso a la comunidad 
-              travesti-trans y al público en general. 
+                Este sitio Web socializa parte de ese acervo documental para ponerlo en acceso a la comunidad
+                travesti-trans y al público en general.
               </p>
 
               <div className="pt-6">
@@ -65,7 +65,9 @@ export default function HomePage() {
             Secciones del Archivo
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-4xl mx-auto">
+          {/* Cambiado a md:grid-cols-3 y max-w-6xl para soportar los 3 elementos en línea */}
+          <div className="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto px-4">
+
             {/* Archivo */}
             <Link href="/archivo" className="group">
               <div className="aspect-[3/2] relative overflow-hidden bg-neutral-100 mb-4">
@@ -101,12 +103,13 @@ export default function HomePage() {
                 Recorrido histórico del Sindicato Afrodita desde su fundación hasta la actualidad.
               </p>
             </Link>
+
             {/* Fondos Personales */}
             <Link href="/fondos-personales" className="group">
               <div className="aspect-[3/2] relative overflow-hidden bg-neutral-100 mb-4">
                 <Image
-                  src="/media/home/3.jpg"
-                  alt="Línea de tiempo"
+                  src="/media/home/3.jpg" // Recuerda cambiar esto por la imagen correcta (ej: /media/home/4.jpg)
+                  alt="Fondos Personales"
                   fill
                   className="object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
                 />
@@ -115,9 +118,10 @@ export default function HomePage() {
                 Fondos Personales
               </h3>
               <p className="text-sm text-neutral-600 leading-relaxed">
-                Fondos personales 
+                Colecciones y archivos privados que rescatan las memorias individuales y trayectorias de los miembros del sindicato.
               </p>
             </Link>
+
           </div>
         </section>
 
@@ -125,7 +129,7 @@ export default function HomePage() {
         <footer className="py-12 border-t border-neutral-200 bg-white">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-              
+
               {/* Logo institucional */}
               <div className="flex-shrink-0">
                 <Image
