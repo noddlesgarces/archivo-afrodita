@@ -1035,7 +1035,7 @@ export const archivoSections: Section[] = [
   {
     slug: "alianzas-trans",
     title: "Alianzas Trans",
-    cover: "/media/archivo-sindical/atr.jpg",
+    cover: `${R2}/alianzas-trans/28.webp`,
     intro: "Documentación de articulaciones, encuentros, marchas y colaboraciones con diversas organizaciones trans y aliadas en Valparaíso y Santiago entre 2002 y 2015.",
     images: [
       {
@@ -1059,7 +1059,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Diario La Estrella de Valparaíso,27 de septiembre de 2003, p. 4. Más de veinte integrantes viajan a participar de la Marcha del Orgullos en Santiago.'
       },
       {
-        src: `${R2}/alianzas-trans/3.webp`,
+        src: `${R2}/alianzas-trans/23.webp`,
         title: "Reunión entre dirigentas de diversas organizaciones trans.",
         serie: "Alianzas Políticas",
         actividad: "Articulaciones",
@@ -1069,7 +1069,7 @@ export const archivoSections: Section[] = [
         descripcion: 'En la fotografía junto a Zuliana se puede apreciar a compañeras de  la Agrupación Corazones Solidarios de Quillota'
       },
       {
-        src: `${R2}/alianzas-trans/4.webp`,
+        src: `${R2}/alianzas-trans/24.webp`,
         title: "Marcha en Santiago",
         serie: "Actividades cíclicas",
         actividad: "Marcha",
@@ -1079,7 +1079,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Marcha en defensa de las diversidades en el marco de un encuentro de organizaciones en el centro de Santiago sosteniendo un lienzo en favor de las diversidades sexuales.'
       },
       {
-        src: `${R2}/alianzas-trans/5.webp`,
+        src: `${R2}/alianzas-trans/25.webp`,
         title: "Comunicado en apoyo a Karen Atala",
         serie: "Actividades cíclicas",
         actividad: "Articulaciones",
@@ -1089,8 +1089,8 @@ export const archivoSections: Section[] = [
         descripcion: 'Comunicado en conjunto con Católicas por el Derecho a Decidir, Batucada Kanaima, Sindicato Afrodita y Corporación Chilena de Prevención del SIDA en apoyo por fallo en contra a la jueza Karen Atala respecto a la tenencia de sus hijas por su orientación sexual.'
       },
       {
-        src: `${R2}/alianzas-trans/6.webp`,
-        title: "Segundo Encuentro Transgénero de Valparaíso.",
+        src: `${R2}/alianzas-trans/27.webp`,
+        title: "Primer Encuentro Transgénero de Valparaíso.",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
         fecha: "11 de julio de 2006",
@@ -1099,8 +1099,8 @@ export const archivoSections: Section[] = [
         descripcion: 'Compañeras reunidas en el Primer Encuentro Transgénero en Valparaíso. En la fotografía es posible reconocer a Alejandra y Krishna.'
       },
       {
-        src: `${R2}/alianzas-trans/7.webp`,
-        title: "Segundo Encuentro Transgénero de Valparaíso. - 2",
+        src: `${R2}/alianzas-trans/28.webp`,
+        title: "Primer Encuentro Transgénero de Valparaíso. - 2",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
         fecha: "11 de julio de 2006",
@@ -1109,8 +1109,8 @@ export const archivoSections: Section[] = [
         descripcion: 'En el Primer Encuentro Transgénero en Valparaíso. En la fotografía, Patricia y Krishna de Amanda Jofré.'
       },
       {
-        src: `${R2}/alianzas-trans/8.webp`,
-        title: "Segundo Encuentro Transgenero de Valparaiso - 3",
+        src: `${R2}/alianzas-trans/29.webp`,
+        title: "Primer Encuentro Transgenero de Valparaiso - 3",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
         fecha: "11 de julio de 2006",
@@ -1119,7 +1119,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Colaboración de diversas organizaciones trans, en la fotografía Ximena,la Yayo y Valeria.'
       },
       {
-        src: `${R2}/alianzas-trans/9.webp`,
+        src: `${R2}/alianzas-trans/14.webp`,
         title: "Segundo Encuentro Transgenero de Valparaiso - 4",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1129,7 +1129,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Preparación del Segundo Encuentro Trans en Chile.'
       },
       {
-        src: `${R2}/alianzas-trans/10.webp`,
+        src: `${R2}/alianzas-trans/15.webp`,
         title: "Segundo Encuentro Transgenero de Chile - 5",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1139,7 +1139,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Compañeras de diversas organizaciones participando del Encuentro Trans en Valparaíso.'
       },
       {
-        src: `${R2}/alianzas-trans/11.webp`,
+        src: `${R2}/alianzas-trans/30.webp`,
         title: "Congreso Nancional de Organizaciones Transfeministas",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1149,7 +1149,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Tríptico con información sobre el Congreso Nacional de Organizaciones Transfemeninas.'
       },
       {
-        src: `${R2}/alianzas-trans/12.webp`,
+        src: `${R2}/alianzas-trans/1.webp`,
         title: "Congreso Nancional de Organizaciones Transfeministas",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1159,7 +1159,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Tríptico con información sobre el Congreso Nacional de Organizaciones Transfemeninas.'
       },
       {
-        src: `${R2}/alianzas-trans/13.webp`,
+        src: `${R2}/alianzas-trans/2.webp`,
         title: "Congreso Transfeminista en Universidad Arcis",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1169,7 +1169,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Panel del Congreso Nacional de Organizaciones Transfemeninas realizado en Universidad Arcis en sede Libertad.'
       },
       {
-        src: `${R2}/alianzas-trans/14.webp`,
+        src: `${R2}/alianzas-trans/3.webp`,
         title: "Arriba del camión durante marcha en Santiago.",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1179,7 +1179,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Espectáculo artístico en el Congreso Nacional de Organizaciones Transfemeninas realizado en Universidad Arcis en sede Libertad.'
       },
       {
-        src: `${R2}/alianzas-trans/15.webp`,
+        src: `${R2}/alianzas-trans/4.webp`,
         title: "Viaje a marcha del orgullo en Santiago",
         serie: "Actividades cíclicas",
         actividad: "Marcha",
@@ -1189,7 +1189,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Compañeras en viaje de Valparaíso a Santiago para participar de la marcha por el orgullo, disfrazadas de Afrdotia, durante la presidencia de Valeria Bustos. Se puede distinguir en primer plano a Marisela.'
       },
       {
-        src: `${R2}/alianzas-trans/16.webp`,
+        src: `${R2}/alianzas-trans/5.webp`,
         title: "Arriba del camión en la marcha de Santiago",
         serie: "Actividades cíclicas",
         actividad: "Marcha",
@@ -1199,7 +1199,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Bailando en marcha por el orgullo en Santiago. En la fotografía se puede apreciar a Marisela.'
       },
       {
-        src: `${R2}/alianzas-trans/17.webp`,
+        src: `${R2}/alianzas-trans/6.webp`,
         title: "Escenario marcha del orgullo",
         serie: "Actividades cíclicas",
         actividad: "Marcha",
@@ -1209,7 +1209,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Zuliana, Abigail y Camila sobre el escenario prinicpal de la marcha por el orgullo. En manos de Zuliana se aprecia cartel que señala "Fin al 373"'
       },
       {
-        src: `${R2}/alianzas-trans/18.webp`,
+        src: `${R2}/alianzas-trans/7.webp`,
         title: "Marcha del orgullo en Santiago",
         serie: "Actividades cíclicas",
         actividad: "Marcha",
@@ -1219,7 +1219,7 @@ export const archivoSections: Section[] = [
         descripcion: 'En la marcha por el orgullo en Santiago. Se puede apreciar a Sandra Peña, Guajachi, Pty, Susy Cuatro y Ximena.'
       },
       {
-        src: `${R2}/alianzas-trans/19.webp`,
+        src: `${R2}/alianzas-trans/8.webp`,
         title: "Marcha del orgullo en Santiago - 2",
         serie: "Actividades cíclicas",
         actividad: "Marcha",
@@ -1229,7 +1229,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Compañeras bailan sobre el carro alegórico en Marcha del Orgullo.'
       },
       {
-        src: `${R2}/alianzas-trans/20.webp`,
+        src: `${R2}/alianzas-trans/9.webp`,
         title: "Marcha del orgullo en Santiago - 3",
         serie: "Actividades cíclicas",
         actividad: "Encuentros Trans",
@@ -1239,7 +1239,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Compañeras bailan sobre el carro alegórico en Marcha del Orgullo.'
       },
       {
-        src: `${R2}/alianzas-trans/21.webp`,
+        src: `${R2}/alianzas-trans/10.webp`,
         title: "Bus de regreso a Valparaiso",
         serie: "Actividades cíclicas",
         actividad: "Encuentros Trans",
@@ -1249,7 +1249,7 @@ export const archivoSections: Section[] = [
         descripcion: 'De regreso a Valparaíso después de participar de la Marcha por el Orgullo en Santiago.'
       },
       {
-        src: `${R2}/alianzas-trans/22.webp`,
+        src: `${R2}/alianzas-trans/12.webp`,
         title: "Segundo Encuentro Transgenero de Chile",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1259,7 +1259,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Planificación del Segundo Encuentro Trans en Chile.'
       },
       {
-        src: `${R2}/alianzas-trans/23.webp`,
+        src: `${R2}/alianzas-trans/13.webp`,
         title: "Segundo Encuentro Transgenero de Chile - 2",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1269,7 +1269,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Material de trabajo para el 2° Encuentro Nacional Trans.'
       },
       {
-        src: `${R2}/alianzas-trans/24.webp`,
+        src: `${R2}/alianzas-trans/16.webp`,
         title: ' "Bolocazzo" encendió carnaval gay de Valparaíso',
         serie: "Alianzas Políticas",
         actividad: "Marchas",
@@ -1279,7 +1279,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Las Últimas Noticias. 29 de junio de 2007, s/p. Nota sobre primera marcha con desfile en Valparaíso.'
       },
       {
-        src: `${R2}/alianzas-trans/25.webp`,
+        src: `${R2}/alianzas-trans/17.webp`,
         title: "En Marcha por el Orgullo en Valparaíso",
         serie: "Alianzas Políticas",
         actividad: "Marchas",
@@ -1289,7 +1289,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Paulina Kournikova en la Marcha del Orgullo en Valparaíso.'
       },
       {
-        src: `${R2}/alianzas-trans/26.webp`,
+        src: `${R2}/alianzas-trans/18.webp`,
         title: "En Marcha por el Orgullo en Valparaíso - 2",
         serie: "Alianzas Políticas",
         actividad: "Marchas",
@@ -1299,7 +1299,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Paulina Kournikova en la Marcha del Orgullo en Valparaíso.'
       },
       {
-        src: `${R2}/alianzas-trans/27.webp`,
+        src: `${R2}/alianzas-trans/19.webp`,
         title: "En Marcha por el Orgullo en Valparaíso - 3",
         serie: "Alianzas Políticas",
         actividad: "Marchas",
@@ -1309,7 +1309,7 @@ export const archivoSections: Section[] = [
         descripcion: 'En la fotografía, entre otros, aparece Ziuliana, Marcelo Aguilar de Acción Gay y la concejala Laura Soto.'
       },
       {
-        src: `${R2}/alianzas-trans/28.webp`,
+        src: `${R2}/alianzas-trans/20.webp`,
         title: "En Marcha por el Orgullo en Valparaíso - 4",
         serie: "Alianzas Políticas",
         actividad: "Marchas",
@@ -1319,7 +1319,7 @@ export const archivoSections: Section[] = [
         descripcion: 'En la fotografía aparece Ziuliana, Marcelo Aguilar de Acción Gay y la concejala Laura Soto.'
       },
       {
-        src: `${R2}/alianzas-trans/29.webp`,
+        src: `${R2}/alianzas-trans/21.webp`,
         title: "Protocolo de colaboración",
         serie: "Alianzas Políticas",
         actividad: "Encuentros Trans",
@@ -1333,11 +1333,11 @@ export const archivoSections: Section[] = [
   {
     slug: "capacitaciones",
     title: "Capacitaciones",
-    cover: "/media/archivo-sindical/c.jpg",
+    cover: `${R2}/capacitaciones/16.webp`,
     intro: "La serie sobre talleres y capacitaciones incluye diferentes experiencias de formación que atravesaron al sindicato vinculadas tanto al aprendizaje de oficios como banquetería, peluquería o costura, como capacitaciones ligadas a formación en salud ligadas al VIH, ETS o salud trans.",
     images: [
       {
-        src: "/media/archivo-sindical/capacitaciones/1.webp",
+        src: `${R2}/capacitaciones/9.webp`,
         title: "Capacitacion Fosis",
         serie: "Talleres y capacitaciones",
         actividad: "Capacitaciones",
@@ -1347,7 +1347,7 @@ export const archivoSections: Section[] = [
         descripcion: "En una capacitación de FOSIS. En la fotografía aparece Zuliana y Vanessa junto a concejales de la época."
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/2.webp",
+        src: `${R2}/capacitaciones/15.webp`,
         title: "Capacitacion Fosis -2",
         serie: "Talleres y capacitaciones",
         actividad: "Capacitaciones",
@@ -1357,7 +1357,7 @@ export const archivoSections: Section[] = [
         descripcion: "En una capacitación de FOSIS. En la fotografía aparece Vanessa junto a otras compañeras"
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/3.webp",
+        src: `${R2}/capacitaciones/16.webp`,
         title: "Capacitacion Sede Colón",
         serie: "Talleres y capacitaciones",
         actividad: "Capacitaciones",
@@ -1367,7 +1367,7 @@ export const archivoSections: Section[] = [
         descripcion: "En capacitaciones y talleres. En la fotografía aparecen Karen, Michel, Peluca, Sandra, Grace, Clara,  Jhoana y Esdrupy"
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/4.webp",
+        src: `${R2}/capacitaciones/17.webp`,
         title: "Carta Embajador de Alemania",
         serie: "Talleres y capacitaciones",
         actividad: "Comedor Abierto",
@@ -1377,7 +1377,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Carta de Enrique Alejandro Araya Gutiérrez "Zuliana", Presidenta del Sindicato de Trabajadoras Independientes Travestis - Afrodita al Embajador de alemania para solicitar apoyo a Embajada para mantener en funcionamiento comedor solidario el cual cubre a 77 socias que trabajan en la calle y 42 socias retiradas mayores de 50 años. Dice que tienen hasta enero de 2005 tienen pagado el arriendo de la sede.'
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/5.webp",
+        src: `${R2}/capacitaciones/14.webp`,
         title: "Almuerzo sede Colón",
         serie: "Talleres y capacitaciones",
         actividad: "Comedor Abierto",
@@ -1387,7 +1387,7 @@ export const archivoSections: Section[] = [
         descripcion: "Capacitación sede Colón"
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/6.webp",
+        src: `${R2}/capacitaciones/18.webp`,
         title: "Tomando Once en sede Colón",
         serie: "Talleres y capacitaciones",
         actividad: "Comedor Abierto",
@@ -1397,7 +1397,7 @@ export const archivoSections: Section[] = [
         descripcion: "Compartiendo una onces en la sede del sindicato probablemente después de una capacitación. En la pared fotos y notas de prensa. Algunas compañeras que aparecen en la fotografía: Dayana, Nicol, Karen, Zuliana, Maricela, Jhoana."
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/7.webp",
+        src: `${R2}/capacitaciones/20.webp`,
         title: "Carta a Jorge Correa Sutil",
         serie: "Talleres y capacitaciones",
         actividad: "Por el derecho a conocer otras formas de vida",
@@ -1407,7 +1407,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Carta de Enrique Araya Gutierrez a Jorge Correa Sutil donde se informa que presentaron el proyecto "Por el derecho a conocer otras formas de vida".Enrique Araya presenta el trabajo del Sindicato, señalando que cuentan con 4000 socias inscritas y 40 activas. Argumenta que el proyecto es necesario para aportar herramientas a las compañeras que ejercen el comercio sexual. Se trata de un taller de repostería.'
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/8.webp",
+        src: `${R2}/capacitaciones/21.webp`,
         title: "Oficio N° 992  emitido por el Gobernador Provincial de Valparaíso",
         serie: "Talleres y capacitaciones",
         actividad: "Por el derecho a conocer otras formas de vida",
@@ -1417,7 +1417,7 @@ export const archivoSections: Section[] = [
         descripcion: 'Oficio N° 992  emitido por Sr. Iván de la Maza Maillet Gobernador Provincial de Valparaíso a Sr. Jorge Correa Sutil, Subsecretario del Interior que presenta el proyecto "Por el derecho a conocer otras formas de vida".'
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/9.webp",
+        src: `${R2}/capacitaciones/22.webp`,
         title: "Carta a Embajada de Suiza",
         serie: "Talleres y capacitaciones",
         actividad: "Capacitaciones banquetería",
@@ -1427,7 +1427,7 @@ export const archivoSections: Section[] = [
         descripcion: "Carta a de Sindicato Afrodita a Sr. Encargado de Proyecto Embajada de Suiza, solicita apyo para crear un taller de gastronomia para que las integrantes del sindicato puedan salir de la calle y crear una Microempresa."
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/10.webp",
+        src: `${R2}/capacitaciones/1.webp`,
         title: "Taller Cocina Interncional y Banquetería",
         serie: "Talleres y capacitaciones",
         actividad: "Taller Cocina Interncional y Banquetería Esilex - Programa SENCE",
@@ -1437,7 +1437,7 @@ export const archivoSections: Section[] = [
         descripcion: "Registro de la formación teórica del taller en Cocina Interncional y Banquetería Esilex. En la fotografía Morin, Karen, Javiera y Grace dibujan en papelógrafo una píramide de alimentos."
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/11.webp",
+        src: `${R2}/capacitaciones/2.webp`,
         title: "Taller Cocina Interncional y Banquetería - 2",
         serie: "Talleres y capacitaciones",
         actividad: "Taller Cocina Interncional y Banquetería Esilex - Programa SENCE",
@@ -1447,7 +1447,7 @@ export const archivoSections: Section[] = [
         descripcion: "Registro de la formación teórica del Taller en Cocina Interncional y Banquetería. En la fotografía se ve a Javiera, Sandra, Grace y Nicole."
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/12.webp",
+        src: `${R2}/capacitaciones/3.webp`,
         title: "Taller Cocina Interncional y Banquetería - 3",
         serie: "Talleres y capacitaciones",
         actividad: "Taller Cocina Interncional y Banquetería Esilex - Programa SENCE",
@@ -1457,7 +1457,7 @@ export const archivoSections: Section[] = [
         descripcion: "Registro de la formación práctica del Taller Cocina Interncional y Banquetería Esilex."
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/13.webp",
+        src: `${R2}/capacitaciones/4.webp`,
         title: "Taller Cocina Interncional y Banquetería - 4",
         serie: "Talleres y capacitaciones",
         actividad: "Taller Cocina Interncional y Banquetería Esilex - Programa SENCE",
@@ -1467,7 +1467,7 @@ export const archivoSections: Section[] = [
         descripcion: "Registro de la formación práctica del Taller Cocina Interncional y Banquetería Esilex."
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/14.webp",
+        src: `${R2}/capacitaciones/5.webp`,
         title: "Taller Cocina Interncional y Banquetería - 5",
         serie: "Talleres y capacitaciones",
         actividad: "Taller Cocina Interncional y Banquetería Esilex - Programa SENCE",
@@ -1477,7 +1477,7 @@ export const archivoSections: Section[] = [
         descripcion: "Registro de la formación práctica del Taller Cocina Interncional y Banquetería Esilex."
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/15.webp",
+        src: `${R2}/capacitaciones/6.webp`,
         title: "Taller Cocina Interncional y Banquetería - 6",
         serie: "Talleres y capacitaciones",
         actividad: "Taller Cocina Interncional y Banquetería Esilex - Programa SENCE",
@@ -1487,7 +1487,7 @@ export const archivoSections: Section[] = [
         descripcion: "En Taller de Cocina Interncional y Banquetería Esilex. Aparecen Javiera, Mourine, Karen, la profesora Maria, Morin y Peluca"
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/16.webp",
+        src: `${R2}/capacitaciones/7.webp`,
         title: 'Travestis se preparan para ser cocineras, "No se nos quemará el arroz", dicen.',
         serie: "Talleres y capacitaciones",
         actividad: "Taller Cocina Interncional y Banquetería Esilex - Programa SENCE",
@@ -1497,7 +1497,7 @@ export const archivoSections: Section[] = [
         descripcion: 'La Estrella de Valparaíso, portada, 1 de abril, 2006.  Titular sobre capacitación en banquetería de las integrantes del Sindicato Afrodita, haciendo referencia al dicho popular "se le quema el arroz" utilizado en Chile para referirse a las personas homosexules.'
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/17.webp",
+        src: `${R2}/capacitaciones/8.webp`,
         title: "Travestis serán cocineras y barwomen",
         serie: "Talleres y capacitaciones",
         actividad: "Taller Cocina Interncional y Banquetería Esilex - Programa SENCE",
@@ -1507,7 +1507,7 @@ export const archivoSections: Section[] = [
         descripcion: "Diario La Estrella de Valparaíso, 1° abril 2006, p.14. La nota cuenta que el Sindicato Afrodita a través del SENCE (servicio nacional de Capacitación) capacita a sus integrantes en banquetería y reposteria y las certifica como manipuladoras de alimentos. La nota señala que la entidad se comprometió a conseguirles prácticas en empresas."
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/18.webp",
+        src: `${R2}/capacitaciones/23.webp`,
         title: "Denuncia pública al Diario La Estrella",
         serie: "Talleres y capacitaciones",
         actividad: "Conflicto Diario La Estrella talleres de banquetería",
@@ -1517,7 +1517,7 @@ export const archivoSections: Section[] = [
         descripcion: "Carta al Diario La Estrella manifestando molestia por un reportaje publicado el 01 de abril de 2006. Esperan algún tipo de disculpa."
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/19.webp",
+        src: `${R2}/capacitaciones/24.webp`,
         title: "Denuncia pública directorio Diario La Estrella",
         serie: "Talleres y capacitaciones",
         actividad: "Conflicto Diario La Estrella talleres de banquetería",
@@ -1527,7 +1527,7 @@ export const archivoSections: Section[] = [
         descripcion: "Carta al directorio del Diario La Estrella de Valparaíso para manifestar su molestia por un reportaje publicado el 01 de abril de 2006 donde se burlaban de la orientación sexual e integridad de las personas travestis y homosexuales. Piden una disculpa."
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/20.webp",
+        src: `${R2}/capacitaciones/10.webp`,
         title: "Entrega de diplomas",
         serie: "Talleres y capacitaciones",
         actividad: "Taller Cocina Interncional y Banquetería Esilex - Programa SENCE",
@@ -1537,7 +1537,7 @@ export const archivoSections: Section[] = [
         descripcion: "Recibiendo certificaciones de Taller Cocina Interncional y Banquetería dictado por la Escuela Internacional Esilex en el marco del programa del Servicio Nacional de Capacitación y Empleo (SENCE). En la fotografía es posible reconocer a Pilar, Grace, Morin y Nicol."
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/21.webp",
+        src: `${R2}/capacitaciones/11.webp`,
         title: "Capacitacion gastronomía sede Av. España",
         serie: "Talleres y capacitaciones",
         actividad: "Capacitaciones",
@@ -1547,7 +1547,7 @@ export const archivoSections: Section[] = [
         descripcion: "Taller gastronomía en sede Av. España"
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/22.webp",
+        src: `${R2}/capacitaciones/25.webp`,
         title: "Capacitación Peluquería sede Av. España",
         serie: "Talleres y capacitaciones",
         actividad: "Capacitaciones",
@@ -1557,7 +1557,7 @@ export const archivoSections: Section[] = [
         descripcion: "Claudia mostrando las máquinas de implementación del taller de peluquería."
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/23.webp",
+        src: `${R2}/capacitaciones/12.webp`,
         title: "Capacitacion peluquería sede Av. España",
         serie: "Talleres y capacitaciones",
         actividad: "Capacitaciones",
@@ -1567,7 +1567,7 @@ export const archivoSections: Section[] = [
         descripcion: "Paulina peinando a Dayana en un curso de peluquería en la sede social del sindicato."
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/24.webp",
+        src: `${R2}/capacitaciones/13.webp`,
         title: " Capacitación Corte y Confección sede Av. España",
         serie: "Talleres y capacitaciones",
         actividad: "Capacitaciones",
@@ -1577,7 +1577,7 @@ export const archivoSections: Section[] = [
         descripcion: "Paulina enseña a la prensa los conocimientos adquiridos en el taller de costura."
       },
       {
-        src: "/media/archivo-sindical/capacitaciones/25.webp",
+        src: `${R2}/capacitaciones/14.webp`,
         title: "Capacitación en sede de Avenida España",
         serie: "Talleres y capacitaciones",
         actividad: "Capacitaciones",
