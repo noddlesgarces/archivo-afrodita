@@ -72,8 +72,6 @@ export const fondosPersonales: FondoPersonal[] = [
       { src: `${R2}/Claudia-D/5.webp` },
       { src: `${R2}/Claudia-D/6.webp` },
       { src: `${R2}/Claudia-D/7.webp` },
-      { src: `${R2}/Claudia-D/8.webp` },
-      { src: `${R2}/Claudia-D/9.webp` },
     ],
   },
   {
