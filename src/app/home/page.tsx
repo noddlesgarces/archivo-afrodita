@@ -14,7 +14,7 @@ export default function HomePage() {
           <div className="fade-in">
             <div className="aspect-[4/5] relative overflow-hidden bg-neutral-100">
               <Image
-                src="/media/home/1.jpg"
+                src="https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes/2.webp"
                 alt="Archivo de memoria cultural"
                 fill
                 className="object-cover filter grayscale hover:grayscale-0 transition-all duration-700"
@@ -99,6 +99,23 @@ export default function HomePage() {
               </h3>
               <p className="text-sm text-neutral-600 leading-relaxed">
                 Recorrido histórico del Sindicato Afrodita desde su fundación hasta la actualidad.
+              </p>
+            </Link>
+            {/* Fondos Personales */}
+            <Link href="/fondos-personales" className="group">
+              <div className="aspect-[3/2] relative overflow-hidden bg-neutral-100 mb-4">
+                <Image
+                  src="/media/home/3.jpg"
+                  alt="Línea de tiempo"
+                  fill
+                  className="object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
+                />
+              </div>
+              <h3 className="text-xl font-serif font-medium text-neutral-900 mb-2 group-hover:text-neutral-600 transition-colors">
+                Fondos Personales
+              </h3>
+              <p className="text-sm text-neutral-600 leading-relaxed">
+                Fondos personales 
               </p>
             </Link>
           </div>
