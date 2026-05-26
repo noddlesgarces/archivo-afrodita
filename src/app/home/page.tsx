@@ -133,7 +133,7 @@ export default function HomePage() {
               {/* Logo institucional */}
               <div className="flex-shrink-0">
                 <Image
-                  src="/media/home/4.png"
+                  src="https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes/4.png"
                   alt="Gobierno de Chile"
                   width={260}
                   height={130}
