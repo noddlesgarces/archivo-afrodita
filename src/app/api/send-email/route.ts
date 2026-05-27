@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     // Enviar el email usando Resend
     const data = await resend.emails.send({
       from: 'Sindicato Afrodita <onboarding@resend.dev>',
-      to: ['matiasgarcesc@gmail.com'],
+      to: ['afroditavalparaiso@gmail.com'],
       replyTo: email,
       subject: `[Contacto Web - ${asunto}] ${nombre}`,
       html: `

@@ -15,8 +15,7 @@ const crimsonText = Crimson_Text({
 
 export const metadata: Metadata = {
   title: "Archivo Cultural | Memoria y Resistencia",
-  description: "Archivo digital para la preservación y difusión de material artístico, documentos, fotografías y textos de movimientos culturales contemporáneos.",
-  keywords: "archivo, cultura, arte, memoria, documentos, fotografía, resistencia",
+  description: "Repositorio digital del Archivo histórico del Sindicato Afrodita de Valparaíso, selección de documentos y fotografías de la organización",
 };
 
 export default function RootLayout({
