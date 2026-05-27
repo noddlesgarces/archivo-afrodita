@@ -38,7 +38,7 @@ const timelineEvents = [
     description:
       'El principal antecedente de la formación del Sindicato Afrodita fue un acto de desobediencia carcelaria:  Detenidas en la calle después de la Navidad y tras días de abandono sin comida en el calabozo, el 31 de diciembre de 1999 Vanessa, Simson, Patty, Meluar, Yayo, Karen, Ximena y Claudia, prendieron fuego a los colchones para exigir el traslado a la cárcel de Quillota donde podían contar con mejores condiciones. Al salir de la cárcel surgió el impulso de organizarse y la forma de hacerlo: a través de un sindicato.',
     participants: ["Vanessa", "Simson", "Patty", "Meluar", "Yayo", "Karen", "Ximena", "Claudia"],
-    image: "1999/1.jpg",
+    image: "https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/cronologia/1.webp",
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ const timelineEvents = [
     description:
       'El acto de constitución del Sindicato Afrodita fue el 22 de agosto del año 2000 en la sede de la Central Única de Trabajadores de Valparaíso ubicada en la calle Blanco. Concurrieron 32 trabajadoras sexuales travestis y estuvieron presentes el dirigente de la CUT Miguel Vargas, la Ministra de Fe Silvia Vallejos, la funcionaria Adriana Mella de la Inspección del Trabajo y la presidenta del Sindicato de Trabajadoras sexuales Independiente Ateneus, Claudia Valle San Martín. En esta instancia se presentaron los estatutos y se votó la primera directiva.',
     participants: [],
-    image: "2000/1.jpg",
+    image: "https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/cronologia/2.webp",
   },
   {
     id: 3,
@@ -60,7 +60,7 @@ const timelineEvents = [
     description:
       'El 1 de diciembre del año 2001 (Día internacional del VIH), antes de tener sede propia, el Sindicato Afrodita realizó su primer Plato Único en un local de la calle Canciani en Valparaíso. Desde sus inicios, el sindicato ha recurrido a la economía de la fiesta y a la comida como una forma de encuentro. En esta primera versión se realizaron diferentes shows y se hizo la primera elección de Miss Afrodita. En el muro junto al escenario, puede distinguirse el primer lienzo del Sindicato pintado para salir a protestar en una marcha donde las compañeras del Sindicato estuvieron con Gladys Marin.',
     participants: [],
-    image: "2001/1.png",
+    image: "https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/cronologia/3.webp",
   },
   {
     id: 4,
@@ -71,7 +71,7 @@ const timelineEvents = [
     description:
       'Tras numerosas gestiones con la Seremi de Bienes Nacionales de la V Región, el Sindicato Afrodita logra obtener una subvención para arrendar su primera sede en una casa ubicada en Av. Colón en Valparaíso. La inauguración fue en agosto del año 2003 para su tercer aniversario. Tener un espacio físico, permitió no sólo contar con un lugar para realizar talleres y reuniones, si no que la sede se constituyó a la vez como hogar, escuela y comedor comunitario, un espacio de sociabilidad y celebración.  Diversas autoridades, activistas y amistades concurrieron al acto de inauguración. La casa fue bendecida por el Padre Pepo, sacerdote a cargo de la Iglesia de la Matriz, quien acogió velorios y ceremonias de despedida de compañeras travesti y trans* en sus propios términos, incluso aunque no tuvieran su identidad legalizada.',
     participants: [],
-    image: "Agosto2003/1.jpg",
+    image: "https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/cronologia/4.webp",
   },
   {
     id: 5,
@@ -82,7 +82,7 @@ const timelineEvents = [
     description:
       'En Septiembre del año 2003 el Sindicato Afrodita realiza su primera Ramada en el Parque Alejo Barrios. Espacio laboral y a la vez ocasión para la fiesta temática y el show nocturno, la Ramada del Sindicato Afrodita se convirtió, por años, en un lugar de referencia para la celebración de las fiestas patrias en la ciudad de Valparaíso.',
     participants: [],
-    image: "Septiembre2003/1.png",
+    image: "https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/cronologia/5.webp",
   },
   {
     id: 6,
@@ -93,7 +93,7 @@ const timelineEvents = [
     description:
       'Debido a que no era posible asegurar la continuidad de la subvención para el arriendo de su sede, desde el año 2004, el Sindicato Afrodita interpuso diferentes solicitudes dirigidas a diferentes instancias municipales y regionales pidiendo un espacio en comodato.  En febrero del año 2006 se logra la concesión en comodato de su actual casa ubicada en Av. España, que fue inaugurada en octubre del año 2006. ',
     participants: [],
-    image: "2006/1.jpg",
+    image: "https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/cronologia/6.webp",
   },
   {
     id: 7,
@@ -103,7 +103,7 @@ const timelineEvents = [
     location: "Valparaíso",
     description: 'Se conforma la sub-agrupación "Las Sobrevivientes" del Sindicato Afrodita, constituyendo así el primer club de adultas mayores trans del país.',
     participants: [],
-    image: "2020/1.jpg",
+    image: "https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/cronologia/7.webp",
   },
   {
     id: 8,
@@ -114,7 +114,7 @@ const timelineEvents = [
     description:
       'Este lunes 26 de agosto de 2024, se presentó en la Biblioteca Santiago Severín, en Valparaíso, la primera fase del proyecto de reconstrucción de la memoria histórica del Sindicato Afrodita con el lanzamiento de un sitio web que el Sindicato Afrodita desarrolló especialmente para albergar el proyecto, que contó con una Subvención Presidencial.',
     participants: [],
-    image: "2024/1.jpg",
+    image: "https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/cronologia/8.webp",
   },
   {
     id: 9,
@@ -125,7 +125,7 @@ const timelineEvents = [
     description:
       'Con una pequeña muestra de lo que fue la exposición en el Archivo Nacional, un stand con el Fotolibro “La Celebración”, homenajes a socias que ya no están y la participación de otras organizaciones regionales por los derechos de la comunidad trans se celebró el Aniversario n° 25 del sindicato.',
     participants: [],
-    image: "2025/1.jpg",
+    image: "https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/cronologia/9.webp",
   },
 ];
 
