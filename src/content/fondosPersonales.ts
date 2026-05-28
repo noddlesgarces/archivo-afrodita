@@ -55,6 +55,14 @@ export const fondosPersonales: FondoPersonal[] = [
     bio: "Clara nace en Los Andes en 1953. Temprano emigra a Valparaíso donde se desempeña como trabajadora sexual. Es una de las socias fundadoras del Sindicato Afrodita. Actualmente se desempeña como tesorera del Sindicato Afrodita.",
     images: [
       { src: `${R2}/Clara/1.webp` },
+      { src: `${R2}/Clara/2.webp` },
+      { src: `${R2}/Clara/3.webp` },
+      { src: `${R2}/Clara/4.webp` },
+      { src: `${R2}/Clara/5.webp` },
+      { src: `${R2}/Clara/6.webp` },
+      { src: `${R2}/Clara/7.webp` },
+      { src: `${R2}/Clara/8.webp` },
+      { src: `${R2}/Clara/9.webp` },
     ],
   },
   {
@@ -93,8 +101,8 @@ export const fondosPersonales: FondoPersonal[] = [
     bio: "Cristina nació en 1966 en Santiago, migró a Valparaíso donde se desempeñó como trabajadora sexual. Fue de las primeras en organizarse y constituir el Sindicato Afrodita, es una de sus fundadoras.",
     images: [
       { src: `${R2}/Cristina-M/1.webp` },
-      { src: `${R2}/Cristina-M/1.webp` },
-      { src: `${R2}/Cristina-M/1.webp` },
+      { src: `${R2}/Cristina-M/2.webp` },
+      { src: `${R2}/Cristina-M/3.webp` },
     ],
   },
   {
