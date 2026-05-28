@@ -145,6 +145,9 @@ export default function HomePage() {
               <p className="text-sm text-neutral-500 text-center md:text-right">
                 Proyecto financiado por el Fondo Nacional de Desarrollo Cultural y las Artes (FONDART)
               </p>
+              <p className="text-xs text-neutral-400 text-center md:text-right mt-2">
+                © 2025 Sindicato Afrodita — Valparaíso, Chile | Contenido bajo licencia CC BY-NC 4.0
+              </p>
             </div>
           </div>
         </footer>
