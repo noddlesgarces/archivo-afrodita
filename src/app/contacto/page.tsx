@@ -9,8 +9,8 @@ const contactInfo = {
   address: "Valparaíso\nChile",
   social: {
     instagram: {
-      handle: "@sindicatoafrodita",
-      url: "https://www.instagram.com/sindicatoafrodita"
+      handle: "@sindicato_afrodita",
+      url: "https://www.instagram.com/sindicato_afrodita"
     },
     facebook: {
       handle: "Sindicato Afrodita",
