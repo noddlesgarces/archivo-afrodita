@@ -59,12 +59,11 @@ export default function ActualidadPage() {
                           <span className="px-2 py-1 text-xs bg-neutral-900 text-neutral-50">
                             {noticia.type}
                           </span>
-                          <span className={`px-2 py-1 text-xs ${
-                            noticia.status === 'En curso' ? 'bg-green-100 text-green-800' :
-                            noticia.status === 'Próximamente' ? 'bg-blue-100 text-blue-800' :
-                            noticia.status === 'Disponible' ? 'bg-purple-100 text-purple-800' :
-                            'bg-neutral-200 text-neutral-700'
-                          }`}>
+                          <span className={`px-2 py-1 text-xs ${noticia.status === 'En curso' ? 'bg-green-100 text-green-800' :
+                              noticia.status === 'Próximamente' ? 'bg-blue-100 text-blue-800' :
+                                noticia.status === 'Disponible' ? 'bg-purple-100 text-purple-800' :
+                                  'bg-neutral-200 text-neutral-700'
+                            }`}>
                             {noticia.status}
                           </span>
                         </div>
@@ -128,8 +127,8 @@ export default function ActualidadPage() {
                   <Link href="/cronologia" className="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors">
                     → Cronología del movimiento
                   </Link>
-                  <Link href="/participantes" className="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors">
-                    → Biografías de participantes
+                  <Link href="/fondos-personales" className="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors">
+                    → Fondos Personales
                   </Link>
                   <Link href="/contacto" className="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors">
                     → Contacto y colaboraciones
@@ -139,7 +138,7 @@ export default function ActualidadPage() {
             </div>
           </div>
         </div>
-      
+
       </main>
     </div>
   );

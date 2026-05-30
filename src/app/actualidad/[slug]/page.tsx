@@ -18,7 +18,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const noticia = getNoticiaBySlug(slug);
-  
+
   if (!noticia) {
     return {
       title: "Noticia no encontrada",
@@ -49,8 +49,8 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
 
       <main className="mx-auto max-w-7xl px-6 lg:px-8 py-12">
         <div className="mb-8">
-          <Link 
-            href="/actualidad" 
+          <Link
+            href="/actualidad"
             className="inline-flex items-center gap-2 text-sm text-neutral-600 hover:text-neutral-900 transition-colors"
           >
             <ArrowLeft className="h-4 w-4" />
@@ -67,12 +67,11 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
                   <span className="px-3 py-1 text-sm bg-neutral-900 text-neutral-50">
                     {noticia.type}
                   </span>
-                  <span className={`px-3 py-1 text-sm ${
-                    noticia.status === 'En curso' ? 'bg-green-100 text-green-800' :
-                    noticia.status === 'Próximamente' ? 'bg-blue-100 text-blue-800' :
-                    noticia.status === 'Disponible' ? 'bg-purple-100 text-purple-800' :
-                    'bg-neutral-200 text-neutral-700'
-                  }`}>
+                  <span className={`px-3 py-1 text-sm ${noticia.status === 'En curso' ? 'bg-green-100 text-green-800' :
+                      noticia.status === 'Próximamente' ? 'bg-blue-100 text-blue-800' :
+                        noticia.status === 'Disponible' ? 'bg-purple-100 text-purple-800' :
+                          'bg-neutral-200 text-neutral-700'
+                    }`}>
                     {noticia.status}
                   </span>
                 </div>
@@ -121,7 +120,7 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
                       </h2>
                     );
                   }
-                  
+
                   if (paragraph.includes('**')) {
                     const parts = paragraph.split(/(\*\*.*?\*\*)/g);
                     return (
@@ -178,7 +177,13 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
               <div className="pt-8 border-t border-neutral-200">
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-neutral-600">Compartir esta noticia</span>
-                  <button className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-neutral-900 border border-neutral-300 hover:bg-neutral-50 transition-colors">
+                  <button
+                    onClick={() => navigator.share ?
+                      navigator.share({ title: noticia.title, url: window.location.href }) :
+                      navigator.clipboard.writeText(window.location.href).then(() => alert('Enlace copiado'))
+                    }
+                    className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-neutral-900 border border-neutral-300 hover:bg-neutral-50 transition-colors"
+                  >
                     <Share2 className="h-4 w-4" />
                     Compartir
                   </button>
@@ -196,7 +201,7 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
                 </h3>
                 <div className="space-y-6">
                   {noticiasRelacionadas.map((noticiaRel) => (
-                    <Link 
+                    <Link
                       key={noticiaRel.id}
                       href={`/actualidad/${noticiaRel.slug}`}
                       className="block group"
