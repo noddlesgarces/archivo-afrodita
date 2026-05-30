@@ -15,8 +15,9 @@ export async function generateStaticParams() {
 }
 
 // Metadata dinámica
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const noticia = getNoticiaBySlug(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const noticia = getNoticiaBySlug(slug);
   
   if (!noticia) {
     return {
@@ -30,15 +31,14 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default function NoticiaPage({ params }: { params: { slug: string } }) {
-  const noticia = getNoticiaBySlug(params.slug);
+export default async function NoticiaPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const noticia = getNoticiaBySlug(slug);
 
-  // Si no existe la noticia, mostrar 404
   if (!noticia) {
     notFound();
   }
 
-  // Obtener noticias relacionadas (las últimas 3 excepto la actual)
   const noticiasRelacionadas = getAllNoticias()
     .filter(n => n.id !== noticia.id)
     .slice(0, 3);
@@ -48,7 +48,6 @@ export default function NoticiaPage({ params }: { params: { slug: string } }) {
       <Navigation />
 
       <main className="mx-auto max-w-7xl px-6 lg:px-8 py-12">
-        {/* Breadcrumb y botón volver */}
         <div className="mb-8">
           <Link 
             href="/actualidad" 
@@ -63,7 +62,6 @@ export default function NoticiaPage({ params }: { params: { slug: string } }) {
           {/* Contenido principal */}
           <div className="lg:col-span-2">
             <article className="bg-white">
-              {/* Header del artículo */}
               <div className="mb-8">
                 <div className="flex items-center gap-4 mb-4">
                   <span className="px-3 py-1 text-sm bg-neutral-900 text-neutral-50">
@@ -103,7 +101,6 @@ export default function NoticiaPage({ params }: { params: { slug: string } }) {
                 </p>
               </div>
 
-              {/* Imagen principal */}
               <div className="aspect-[16/9] relative overflow-hidden bg-neutral-100 mb-8">
                 <Image
                   src={noticia.image}
@@ -114,10 +111,8 @@ export default function NoticiaPage({ params }: { params: { slug: string } }) {
                 />
               </div>
 
-              {/* Contenido completo */}
               <div className="prose prose-neutral max-w-none mb-12">
                 {noticia.fullContent.split('\n\n').map((paragraph, index) => {
-                  // Si el párrafo empieza con **, es un subtítulo
                   if (paragraph.trim().startsWith('**') && paragraph.trim().endsWith('**')) {
                     const title = paragraph.replace(/\*\*/g, '');
                     return (
@@ -127,7 +122,6 @@ export default function NoticiaPage({ params }: { params: { slug: string } }) {
                     );
                   }
                   
-                  // Si el párrafo contiene negrita inline
                   if (paragraph.includes('**')) {
                     const parts = paragraph.split(/(\*\*.*?\*\*)/g);
                     return (
@@ -142,7 +136,6 @@ export default function NoticiaPage({ params }: { params: { slug: string } }) {
                     );
                   }
 
-                  // Si es un párrafo con lista (contiene '- ')
                   if (paragraph.trim().startsWith('- ')) {
                     const items = paragraph.split('\n').filter(line => line.trim().startsWith('- '));
                     return (
@@ -154,7 +147,6 @@ export default function NoticiaPage({ params }: { params: { slug: string } }) {
                     );
                   }
 
-                  // Párrafo normal
                   return (
                     <p key={index} className="text-neutral-700 leading-relaxed mb-6">
                       {paragraph}
@@ -163,7 +155,6 @@ export default function NoticiaPage({ params }: { params: { slug: string } }) {
                 })}
               </div>
 
-              {/* Galería de imágenes adicionales */}
               {noticia.galeria && noticia.galeria.length > 1 && (
                 <div className="mb-12">
                   <h3 className="text-xl font-serif font-semibold text-neutral-900 mb-6">
@@ -184,7 +175,6 @@ export default function NoticiaPage({ params }: { params: { slug: string } }) {
                 </div>
               )}
 
-              {/* Compartir */}
               <div className="pt-8 border-t border-neutral-200">
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-neutral-600">Compartir esta noticia</span>
@@ -200,10 +190,6 @@ export default function NoticiaPage({ params }: { params: { slug: string } }) {
           {/* Sidebar */}
           <div className="lg:col-span-1">
             <div className="sticky top-8 space-y-8">
-              {/* Resumen destacado */}
-              
-
-              {/* Noticias relacionadas */}
               <div>
                 <h3 className="text-lg font-serif font-semibold text-neutral-900 mb-6">
                   Más Noticias
@@ -246,9 +232,6 @@ export default function NoticiaPage({ params }: { params: { slug: string } }) {
                 </div>
               </div>
 
-          
-
-              {/* Enlaces rápidos */}
               <div>
                 <h3 className="font-serif font-semibold text-neutral-900 mb-4">
                   Explora Más
@@ -260,8 +243,8 @@ export default function NoticiaPage({ params }: { params: { slug: string } }) {
                   <Link href="/cronologia" className="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors">
                     → Cronología
                   </Link>
-                  <Link href="/participantes" className="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors">
-                    → Participantes
+                  <Link href="/fondos-personales" className="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors">
+                    → Fondos Personales
                   </Link>
                   <Link href="/actualidad" className="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors">
                     → Todas las noticias
