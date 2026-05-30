@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Crimson_Text } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 
 const inter = Inter({
@@ -47,8 +48,34 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${inter.variable} ${crimsonText.variable}`}>
-      <body className="font-sans antialiased bg-neutral-50 text-neutral-900">
-        {children}
+      <body className="font-sans antialiased bg-neutral-50 text-neutral-900 flex flex-col min-h-screen">
+        <div className="flex-1">
+          {children}
+        </div>
+
+        <footer className="py-12 border-t border-neutral-200 bg-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="flex-shrink-0">
+                <Image
+                  src="https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes/4.png"
+                  alt="Gobierno de Chile"
+                  width={260}
+                  height={130}
+                  className="object-contain"
+                />
+              </div>
+              <div className="flex flex-col items-center md:items-end gap-1">
+                <p className="text-sm text-neutral-500 text-center md:text-right">
+                  Proyecto financiado por el Fondo Nacional de Desarrollo Cultural y las Artes (FONDART)
+                </p>
+                <p className="text-xs text-neutral-400 text-center md:text-right">
+                  © 2025 Sindicato Afrodita — Valparaíso, Chile | Contenido bajo licencia CC BY-NC 4.0
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );

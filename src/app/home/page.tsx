@@ -125,32 +125,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Footer info */}
-        <footer className="py-12 border-t border-neutral-200 bg-white">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-
-              {/* Logo institucional */}
-              <div className="flex-shrink-0">
-                <Image
-                  src="https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes/4.png"
-                  alt="Gobierno de Chile"
-                  width={260}
-                  height={130}
-                  className="object-contain"
-                />
-              </div>
-
-              {/* Texto */}
-              <p className="text-sm text-neutral-500 text-center md:text-right">
-                Proyecto financiado por el Fondo Nacional de Desarrollo Cultural y las Artes (FONDART)
-              </p>
-              <p className="text-xs text-neutral-400 text-center md:text-right mt-2">
-                © 2025 Sindicato Afrodita — Valparaíso, Chile | Contenido bajo licencia CC BY-NC 4.0
-              </p>
-            </div>
-          </div>
-        </footer>
+        
       </main>
     </div>
   );
