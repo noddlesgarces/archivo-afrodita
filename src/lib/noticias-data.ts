@@ -20,11 +20,11 @@ export const noticias: Noticia[] = [
     id: 1,
     slug: "amores-trans-taller-memorias-afectivas-resistencia",
     type: "Publicación",
-    title: '"Amores Trans*": un taller de memorias afectivas para visibilizar el amor como resistencia y existencia plena',
+    title: '"Amores Trans*"',
     date: "2025-12-10",
     location: "Valparaíso",
     excerpt: "En cinco sesiones, socias del Sindicato Afrodita, mujeres travesti-trans adultas mayores, reconstruyeron sus historias de primer amor, grandes amores, amores imposibles y vínculos disidentes. La actividad generó un archivo audiovisual y una serie de objetos simbólicos.",
-    image: "URL_IMAGEN",
+    image: "https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes-noticias/amores-trans/1.webp",
     content: "La organización llevó adelante el taller \"Amores Trans*\", una propuesta de memorias afectivas dirigida a mujeres travesti-trans, en su mayoría adultas mayores, socias del Sindicato Afrodita.",
     fullContent: `La organización llevó adelante el taller "Amores Trans*", una propuesta de memorias afectivas dirigida a mujeres travesti-trans, en su mayoría adultas mayores, socias del Sindicato Afrodita. A lo largo de cinco encuentros, las participantes exploraron colectivamente el primer amor, el gran amor, los amores imposibles y la diversidad de vínculos afectivos que atravesaron sus vidas.
 
@@ -46,7 +46,7 @@ A través del archivo y la difusión de estas memorias afectivas, la organizaci�
     date: "2025-12-10",
     location: "Valparaíso",
     excerpt: "En cinco sesiones, socias del Sindicato Afrodita, mujeres travesti-trans adultas mayores, reconstruyeron sus historias de primer amor, grandes amores, amores imposibles y vínculos disidentes. La actividad generó un archivo audiovisual y una serie de objetos simbólicos.",
-    image: "URL_IMAGEN",
+    image: "https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes-noticias/inicio-a%C3%B1o/1.webp",
     content: "La organización llevó adelante el taller \"Amores Trans*\", una propuesta de memorias afectivas dirigida a mujeres travesti-trans, en su mayoría adultas mayores, socias del Sindicato Afrodita.",
     fullContent: `La organización llevó adelante el taller "Amores Trans*", una propuesta de memorias afectivas dirigida a mujeres travesti-trans, en su mayoría adultas mayores, socias del Sindicato Afrodita. A lo largo de cinco encuentros, las participantes exploraron colectivamente el primer amor, el gran amor, los amores imposibles y la diversidad de vínculos afectivos que atravesaron sus vidas.
  
