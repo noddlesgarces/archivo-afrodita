@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Calendar, MapPin, ArrowLeft, Share2 } from "lucide-react";
 import { notFound } from "next/navigation";
 import { getNoticiaBySlug, getAllNoticias } from "@/lib/noticias-data";
+import ShareButton from "./ShareButton";
 
 // Generar las rutas estáticas
 export async function generateStaticParams() {
@@ -177,16 +178,7 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
               <div className="pt-8 border-t border-neutral-200">
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-neutral-600">Compartir esta noticia</span>
-                  <button
-                    onClick={() => navigator.share ?
-                      navigator.share({ title: noticia.title, url: window.location.href }) :
-                      navigator.clipboard.writeText(window.location.href).then(() => alert('Enlace copiado'))
-                    }
-                    className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-neutral-900 border border-neutral-300 hover:bg-neutral-50 transition-colors"
-                  >
-                    <Share2 className="h-4 w-4" />
-                    Compartir
-                  </button>
+                  <ShareButton title={noticia.title} />
                 </div>
               </div>
             </article>
