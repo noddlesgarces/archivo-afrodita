@@ -1,10 +1,6 @@
-import { Client } from "@notionhq/client";
 import { Noticia } from "./noticias-data";
 
-const notion = new Client({
-  auth: process.env.NOTION_TOKEN,
-});
-
+const NOTION_TOKEN = process.env.NOTION_TOKEN;
 const DATABASE_ID = process.env.NOTION_DATABASE_ID!;
 
 function getText(prop: any): string {
@@ -16,13 +12,29 @@ function getText(prop: any): string {
   return "";
 }
 
-export async function getNoticiasFromNotion(): Promise<Noticia[]> {
-  const response = await (notion.databases as any).query({
-    database_id: DATABASE_ID,
-    sorts: [{ property: "Fecha", direction: "descending" }],
-  });
+async function queryNotion() {
+  const response = await fetch(
+    `https://api.notion.com/v1/databases/${DATABASE_ID}/query`,
+    {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${NOTION_TOKEN}`,
+        "Notion-Version": "2022-06-28",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        sorts: [{ property: "Fecha", direction: "descending" }],
+      }),
+      next: { revalidate: 60 },
+    }
+  );
+  return response.json();
+}
 
-  return response.results.map((page: any, index: number) => {
+export async function getNoticiasFromNotion(): Promise<Noticia[]> {
+  const data = await queryNotion();
+
+  return (data.results ?? []).map((page: any, index: number) => {
     const props = page.properties;
     const fullContent = getText(props["Contenido completo"]);
 
