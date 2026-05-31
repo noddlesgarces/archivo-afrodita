@@ -22,7 +22,7 @@ export default function Navigation() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex lg:flex-1">
-            <Link href="/" className="-m-1.5 p-1.5 group">
+            <Link href="/home" className="-m-1.5 p-1.5 group">
               <div className="flex items-center space-x-3">
                 <div className="w-8 h-8 bg-neutral-900 flex items-center justify-center">
                   <div className="w-4 h-4 bg-neutral-50 transform rotate-45"></div>
@@ -68,7 +68,7 @@ export default function Navigation() {
           <div className="fixed inset-0 z-50" />
           <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-neutral-50 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-neutral-200">
             <div className="flex items-center justify-between">
-              <Link href="/" className="-m-1.5 p-1.5">
+              <Link href="/home" className="-m-1.5 p-1.5">
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-neutral-900 flex items-center justify-center">
                     <div className="w-4 h-4 bg-neutral-50 transform rotate-45"></div>

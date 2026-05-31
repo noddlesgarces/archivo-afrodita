@@ -72,7 +72,7 @@ export default function HomePage() {
             <Link href="/archivo" className="group">
               <div className="aspect-[3/2] relative overflow-hidden bg-neutral-100 mb-4">
                 <Image
-                  src="https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes/3.webp"
+                  src="https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes/6.webp"
                   alt="Archivo de documentos"
                   fill
                   className="object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
@@ -108,7 +108,7 @@ export default function HomePage() {
             <Link href="/fondos-personales" className="group">
               <div className="aspect-[3/2] relative overflow-hidden bg-neutral-100 mb-4">
                 <Image
-                  src="https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes/6.webp" // Recuerda cambiar esto por la imagen correcta (ej: /media/home/4.jpg)
+                  src="https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes/3.webp" // Recuerda cambiar esto por la imagen correcta (ej: /media/home/4.jpg)
                   alt="Fondos Personales"
                   fill
                   className="object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
