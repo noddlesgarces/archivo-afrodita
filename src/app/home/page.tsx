@@ -14,7 +14,7 @@ export default function HomePage() {
           <div className="fade-in">
             <div className="aspect-[4/5] relative overflow-hidden bg-neutral-100">
               <Image
-                src="https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes/2.webp"
+                src="https://cdn.archivoafrodita.cl/imagenes/2.webp"
                 alt="Archivo de memoria cultural"
                 fill
                 className="object-cover filter grayscale hover:grayscale-0 transition-all duration-700"
@@ -72,7 +72,7 @@ export default function HomePage() {
             <Link href="/archivo" className="group">
               <div className="aspect-[3/2] relative overflow-hidden bg-neutral-100 mb-4">
                 <Image
-                  src="https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes/6.webp"
+                  src="https://cdn.archivoafrodita.cl/imagenes/6.webp"
                   alt="Archivo de documentos"
                   fill
                   className="object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
@@ -90,7 +90,7 @@ export default function HomePage() {
             <Link href="/cronologia" className="group">
               <div className="aspect-[3/2] relative overflow-hidden bg-neutral-100 mb-4">
                 <Image
-                  src="https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes/5.webp"
+                  src="https://cdn.archivoafrodita.cl/imagenes/5.webp"
                   alt="Línea de tiempo"
                   fill
                   className="object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
@@ -108,7 +108,7 @@ export default function HomePage() {
             <Link href="/fondos-personales" className="group">
               <div className="aspect-[3/2] relative overflow-hidden bg-neutral-100 mb-4">
                 <Image
-                  src="https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes/3.webp" // Recuerda cambiar esto por la imagen correcta (ej: /media/home/4.jpg)
+                  src="https://cdn.archivoafrodita.cl/imagenes/3.webp" // Recuerda cambiar esto por la imagen correcta (ej: /media/home/4.jpg)
                   alt="Fondos Personales"
                   fill
                   className="object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"

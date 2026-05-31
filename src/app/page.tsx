@@ -55,7 +55,7 @@ export default function SplashPage() {
         .splash-bg {
           position: absolute;
           inset: -10%;
-          background-image: url('https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes/1.webp');
+          background-image: url('https://cdn.archivoafrodita.cl/imagenes/1.webp');
           background-size: cover;
           background-position: center;
           filter: grayscale(60%) brightness(0.5);

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes/1.webp",
+        url: "https://cdn.archivoafrodita.cl/imagenes/1.webp",
         width: 1200,
         height: 630,
         alt: "Archivo Sindicato Afrodita",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Archivo Sindicato Afrodita",
     description: "Repositorio digital del Archivo histórico del Sindicato Afrodita de Valparaíso",
-    images: ["https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes/1.webp"],
+    images: ["https://cdn.archivoafrodita.cl/imagenes/1.webp"],
   },
 };
 
@@ -58,7 +58,7 @@ export default function RootLayout({
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex-shrink-0">
                 <Image
-                  src="https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes/4.png"
+                  src="https://cdn.archivoafrodita.cl/imagenes/4.png"
                   alt="Gobierno de Chile"
                   width={260}
                   height={130}

@@ -24,7 +24,7 @@ export const noticias: Noticia[] = [
     date: "2025-12-10",
     location: "Valparaíso",
     excerpt: "En cinco sesiones, socias del Sindicato Afrodita, mujeres travesti-trans adultas mayores, reconstruyeron sus historias de primer amor, grandes amores, amores imposibles y vínculos disidentes. La actividad generó un archivo audiovisual y una serie de objetos simbólicos.",
-    image: "https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes-noticias/amores-trans/1.webp",
+    image: "https://cdn.archivoafrodita.cl/imagenes-noticias/amores-trans/1.webp",
     content: "La organización llevó adelante el taller \"Amores Trans*\", una propuesta de memorias afectivas dirigida a mujeres travesti-trans, en su mayoría adultas mayores, socias del Sindicato Afrodita.",
     fullContent: `La organización llevó adelante el taller "Amores Trans*", una propuesta de memorias afectivas dirigida a mujeres travesti-trans, en su mayoría adultas mayores, socias del Sindicato Afrodita. A lo largo de cinco encuentros, las participantes exploraron colectivamente el primer amor, el gran amor, los amores imposibles y la diversidad de vínculos afectivos que atravesaron sus vidas.
 
@@ -36,7 +36,7 @@ A través del archivo y la difusión de estas memorias afectivas, la organizaci�
 
 "Amores Trans*" reafirma que el amor también es un territorio de lucha, memoria y potencia política.`,
     status: "Disponible",
-    galeria: ["https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes-noticias/amores-trans/1.webp"],
+    galeria: ["https://cdn.archivoafrodita.cl/imagenes-noticias/amores-trans/1.webp"],
   },
   {
     id: 2,
@@ -46,7 +46,7 @@ A través del archivo y la difusión de estas memorias afectivas, la organizaci�
     date: "2026-03-29",
     location: "Valparaíso",
     excerpt: "Entre pescado frito, abrazos y mucha alegría, las socias compartieron el primer gran momento del año. Además, se sumaron alumnas en práctica de Trabajo Social, Psicología e Historia, fortaleciendo el trabajo colectivo desde distintas miradas.",
-    image: "https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes-noticias/inicio-a%C3%B1o/1.webp",
+    image: "https://cdn.archivoafrodita.cl/imagenes-noticias/inicio-a%C3%B1o/1.webp",
     content: "Con un cálido almuerzo compartido, el Sindicato Afrodita dio inicio formal a las actividades del 2026. La propuesta fue sencilla y poderosa: reencontrarse.",
     fullContent: `Con un cálido almuerzo compartido, el Sindicato Afrodita dio inicio formal a las actividades del 2026. La propuesta fue sencilla y poderosa: reencontrarse. En torno a un rico pescado frito, preparado por las talentosas cocineras estrellas de la casa, las socias compartieron una hermosa jornada que buscó empezar el año con ánimo, afecto y mucha energía.
 
@@ -58,7 +58,7 @@ De esta manera, el Sindicato arranca el año con el pie derecho: con el sabor de
 
 El 2026 promete ser un año de mucho trabajo, mucho amor y más actividades.`,
     status: "Disponible",
-    galeria: ["https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/imagenes-noticias/inicio-a%C3%B1o/1.webp"],
+    galeria: ["https://cdn.archivoafrodita.cl/imagenes-noticias/inicio-a%C3%B1o/1.webp"],
   },
 
 ];

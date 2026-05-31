@@ -1,4 +1,4 @@
-const R2 = "https://pub-60ba8de670c44a5ba2f735f42b706058.r2.dev/fondos-personales";
+const R2 = "https://cdn.archivoafrodita.cl/fondos-personales";
 
 export type FondoImage = {
   src: string;
