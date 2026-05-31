@@ -1,21 +1,20 @@
 // app/actualidad/page.tsx
-import CategoryFeed from "@/components/CategoryFeed";
-import CategoryHero from "@/components/CategoryHero";
 import Navigation from "@/components/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Calendar, MapPin, ArrowRight } from "lucide-react";
-import { getAllNoticias } from "@/lib/noticias-data";
+import { getNoticiasFromNotion } from "@/lib/notion";
 
-export default function ActualidadPage() {
-  const noticias = getAllNoticias();
+export const revalidate = 60;
+
+export default async function ActualidadPage() {
+  const noticias = await getNoticiasFromNotion();
 
   return (
     <div className="min-h-screen bg-neutral-50">
       <Navigation />
 
       <main className="mx-auto max-w-7xl px-6 lg:px-8 py-12">
-        {/* Header */}
         <div className="mb-16 fade-in">
           <h1 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900 mb-6">
             Actualidad
@@ -28,7 +27,6 @@ export default function ActualidadPage() {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-12">
-          {/* Noticias principales */}
           <div className="lg:col-span-2">
             <h2 className="text-2xl font-serif font-semibold text-neutral-900 mb-8">
               Noticias Recientes
@@ -38,7 +36,6 @@ export default function ActualidadPage() {
               {noticias.map((noticia, index) => (
                 <article key={noticia.id} className="fade-in" style={{ animationDelay: `${index * 100}ms` }}>
                   <div className="grid md:grid-cols-3 gap-6">
-                    {/* Imagen */}
                     <div className="md:col-span-1">
                       <Link href={`/actualidad/${noticia.slug}`}>
                         <div className="aspect-[4/3] relative overflow-hidden bg-neutral-100 cursor-pointer">
@@ -52,18 +49,18 @@ export default function ActualidadPage() {
                       </Link>
                     </div>
 
-                    {/* Contenido */}
                     <div className="md:col-span-2 space-y-4">
                       <div>
                         <div className="flex items-center gap-4 mb-2">
                           <span className="px-2 py-1 text-xs bg-neutral-900 text-neutral-50">
                             {noticia.type}
                           </span>
-                          <span className={`px-2 py-1 text-xs ${noticia.status === 'En curso' ? 'bg-green-100 text-green-800' :
-                              noticia.status === 'Próximamente' ? 'bg-blue-100 text-blue-800' :
-                                noticia.status === 'Disponible' ? 'bg-purple-100 text-purple-800' :
-                                  'bg-neutral-200 text-neutral-700'
-                            }`}>
+                          <span className={`px-2 py-1 text-xs ${
+                            noticia.status === 'En curso' ? 'bg-green-100 text-green-800' :
+                            noticia.status === 'Próximamente' ? 'bg-blue-100 text-blue-800' :
+                            noticia.status === 'Disponible' ? 'bg-purple-100 text-purple-800' :
+                            'bg-neutral-200 text-neutral-700'
+                          }`}>
                             {noticia.status}
                           </span>
                         </div>
@@ -112,10 +109,8 @@ export default function ActualidadPage() {
             </div>
           </div>
 
-          {/* Sidebar con enlaces */}
           <div className="lg:col-span-1">
             <div className="sticky top-8 space-y-8">
-              {/* Enlaces rápidos */}
               <div>
                 <h3 className="font-serif font-semibold text-neutral-900 mb-4">
                   Enlaces de Interés
@@ -138,7 +133,6 @@ export default function ActualidadPage() {
             </div>
           </div>
         </div>
-
       </main>
     </div>
   );
