@@ -1,8 +1,8 @@
 import React from "react";
 import Navigation from "@/components/navigation";
 import Image from "next/image";
-import Masonry from "react-masonry-css";
 
+// Configuración R2
 const R2 = "https://cdn.archivoafrodita.cl";
 
 export const metadata = {
@@ -27,34 +27,7 @@ const galeria = [
     { src: `${R2}/organizacion-sindical/10.webp` },
 ];
 
-// Breakpoints para el masonry
-const breakpointColumns = {
-    default: 4,
-    1024: 3,
-    768: 2,
-    480: 2,
-};
-
 export default function FanzinePage(): React.ReactElement {
-    // Función para generar alturas aleatorias pero consistentes
-    const getHeight = (index: number) => {
-        const heights = [
-            "h-64", "h-80", "h-56", "h-96",
-            "h-72", "h-64", "h-88", "h-60",
-            "h-80", "h-72", "h-96", "h-64",
-            "h-56", "h-84", "h-68", "h-92",
-            "h-76", "h-60", "h-88", "h-72"
-        ];
-        return heights[index % heights.length];
-    };
-
-    // Función para generar spans de columna aleatorios (algunas imágenes más anchas)
-    const getSpan = (index: number) => {
-        // Cada 4ta imagen ocupa 2 columnas (más ancha)
-        if (index % 4 === 0) return "md:col-span-2";
-        return "md:col-span-1";
-    };
-
     return (
         <div className="min-h-screen bg-neutral-50">
             <Navigation />
@@ -151,67 +124,45 @@ export default function FanzinePage(): React.ReactElement {
                 </section>
 
                 {/* ============================================ */}
-                {/* GALERÍA DINÁMICA - MASONRY REAL              */}
+                {/* GALERÍA DINÁMICA - CSS GRID CON SPANS        */}
                 {/* ============================================ */}
                 <section className="py-8 border-t border-neutral-200">
                     <p className="text-xs uppercase tracking-widest text-neutral-400 mb-8 pb-3 border-b border-neutral-200">
                         Galería · Material adicional
                     </p>
 
-                    {/* Masonry con react-masonry-css */}
-                    <Masonry
-                        breakpointCols={breakpointColumns}
-                        className="flex w-auto -ml-4"
-                        columnClassName="pl-4 bg-clip-padding"
-                    >
-                        {galeria.map((img, index) => (
-                            <div
-                                key={index}
-                                className={`relative w-full ${getHeight(index)} bg-neutral-200 overflow-hidden mb-4 group`}
-                            >
-                                <Image
-                                    src={img.src}
-                                    alt=""
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                                />
-                                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                    <div className="w-full bg-black/70 text-white text-xs px-3 py-2">
-                                        <span className="block font-medium">Descripción breve de la imagen</span>
-                                        <span className="text-neutral-300">Valparaíso, [año]</span>
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+                        {galeria.map((img, index) => {
+                            // Generar spans de fila aleatorios (entre 1 y 3)
+                            const rowSpan = Math.floor(Math.random() * 3) + 1;
+                            // Generar spans de columna (cada 3ra imagen ocupa 2 columnas)
+                            const colSpan = index % 3 === 0 ? "md:col-span-2" : "md:col-span-1";
+                            
+                            return (
+                                <div
+                                    key={index}
+                                    className={`relative ${colSpan} bg-neutral-200 overflow-hidden group`}
+                                    style={{
+                                        gridRow: `span ${rowSpan}`,
+                                        minHeight: `${rowSpan * 100}px`,
+                                    }}
+                                >
+                                    <Image
+                                        src={img.src}
+                                        alt=""
+                                        fill
+                                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                    />
+                                    <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                        <div className="w-full bg-black/70 text-white text-[10px] md:text-xs px-2 md:px-3 py-1.5 md:py-2">
+                                            <span className="block font-medium truncate">Descripción breve</span>
+                                            <span className="text-neutral-300">Valparaíso, [año]</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
-                    </Masonry>
-
-                    {/* Versión alternativa sin librería (CSS Grid con spans) */}
-                    {/* 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
-                        {galeria.map((img, index) => (
-                            <div
-                                key={index}
-                                className={`relative ${getSpan(index)} bg-neutral-200 overflow-hidden group`}
-                                style={{
-                                    gridRow: `span ${Math.floor(Math.random() * 3) + 1}`,
-                                }}
-                            >
-                                <Image
-                                    src={img.src}
-                                    alt=""
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                                />
-                                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                    <div className="w-full bg-black/70 text-white text-xs px-3 py-2">
-                                        <span className="block font-medium">Descripción breve de la imagen</span>
-                                        <span className="text-neutral-300">Valparaíso, [año]</span>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
+                            );
+                        })}
                     </div>
-                    */}
                 </section>
 
                 {/* ============================================ */}
