@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect, useRef } from "react";
 import Navigation from "@/components/navigation";
 import Image from "next/image";
 
@@ -10,33 +12,71 @@ export const metadata = {
     description: "Material ampliado del fanzine del Sindicato Afrodita.",
 };
 
-// Imágenes placeholder (solo src)
+// Solo los src, nada más
 const galeria = [
-    { src: `${R2}/organizacion-sindical/1.webp` },
-    { src: `${R2}/organizacion-sindical/14.webp` },
-    { src: `${R2}/organizacion-sindical/22.webp` },
-    { src: `${R2}/organizacion-sindical/17.webp` },
-    { src: `${R2}/organizacion-sindical/24.webp` },
-    { src: `${R2}/organizacion-sindical/25.webp` },
-    { src: `${R2}/organizacion-sindical/26.webp` },
-    { src: `${R2}/organizacion-sindical/27.webp` },
-    { src: `${R2}/organizacion-sindical/28.webp` },
-    { src: `${R2}/organizacion-sindical/2.webp` },
-    { src: `${R2}/organizacion-sindical/4.webp` },
-    { src: `${R2}/organizacion-sindical/7.webp` },
-    { src: `${R2}/organizacion-sindical/10.webp` },
+    `${R2}/organizacion-sindical/1.webp`,
+    `${R2}/organizacion-sindical/14.webp`,
+    `${R2}/organizacion-sindical/22.webp`,
+    `${R2}/organizacion-sindical/17.webp`,
+    `${R2}/organizacion-sindical/24.webp`,
+    `${R2}/organizacion-sindical/25.webp`,
+    `${R2}/organizacion-sindical/26.webp`,
+    `${R2}/organizacion-sindical/27.webp`,
+    `${R2}/organizacion-sindical/28.webp`,
+    `${R2}/organizacion-sindical/2.webp`,
+    `${R2}/organizacion-sindical/4.webp`,
+    `${R2}/organizacion-sindical/7.webp`,
+    `${R2}/organizacion-sindical/10.webp`,
 ];
 
+// Shimmer para placeholder
+const shimmer = (w: number, h: number) =>
+    `data:image/svg+xml;base64,${Buffer.from(
+        `<svg width="${w}" height="${h}" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="g">
+                    <stop stop-color="#f3f4f6" offset="20%" />
+                    <stop stop-color="#e5e7eb" offset="50%" />
+                    <stop stop-color="#f3f4f6" offset="70%" />
+                </linearGradient>
+            </defs>
+            <rect width="${w}" height="${h}" fill="#f3f4f6" />
+            <rect id="r" width="${w}" height="${h}" fill="url(#g)" />
+            <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1s" repeatCount="indefinite" />
+        </svg>`
+    ).toString("base64")}`;
+
 export default function FanzinePage(): React.ReactElement {
+    const [selected, setSelected] = useState<string | null>(null);
+    const [modalLoading, setModalLoading] = useState(true);
+    const preloaded = useRef<Set<string>>(new Set());
+
+    const preloadSrc = (src: string) => {
+        if (preloaded.current.has(src) || typeof window === "undefined") return;
+        const img = new window.Image();
+        img.src = src;
+        preloaded.current.add(src);
+    };
+
+    // Cerrar con Escape
+    useEffect(() => {
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (e.key === "Escape") {
+                setSelected(null);
+                setModalLoading(true);
+            }
+        };
+        document.addEventListener("keydown", handleKeyDown);
+        return () => document.removeEventListener("keydown", handleKeyDown);
+    }, []);
+
     return (
         <div className="min-h-screen bg-neutral-50">
             <Navigation />
 
             <main className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
 
-                {/* ============================================ */}
-                {/* HEADER                                      */}
-                {/* ============================================ */}
+                {/* HEADER */}
                 <div className="py-8 md:py-12 border-b border-neutral-200">
                     <p className="text-xs uppercase tracking-widest text-neutral-400 mb-3">
                         Desde el fanzine · 2025
@@ -51,9 +91,7 @@ export default function FanzinePage(): React.ReactElement {
                     </p>
                 </div>
 
-                {/* ============================================ */}
-                {/* PIEZAS SELECCIONADAS                         */}
-                {/* ============================================ */}
+                {/* PIEZAS SELECCIONADAS */}
                 <section className="py-12 md:py-16">
                     <p className="text-xs uppercase tracking-widest text-neutral-400 mb-8 pb-3 border-b border-neutral-200">
                         Piezas seleccionadas
@@ -61,33 +99,41 @@ export default function FanzinePage(): React.ReactElement {
 
                     {/* BLOQUE 1 */}
                     <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start mb-16 border-l-4 border-neutral-900 pl-4 md:pl-6">
-                        <div className="relative aspect-[4/3] bg-neutral-200 overflow-hidden">
+                        <button
+                            className="relative aspect-[4/3] bg-neutral-200 overflow-hidden group w-full text-left"
+                            onClick={() => {
+                                setModalLoading(true);
+                                preloadSrc(galeria[0]);
+                                setSelected(galeria[0]);
+                            }}
+                        >
                             <Image
-                                src={galeria[0].src}
+                                src={galeria[0]}
                                 alt=""
                                 fill
-                                className="object-cover"
+                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                placeholder="blur"
+                                blurDataURL={shimmer(600, 450)}
                             />
-                            <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-xs px-4 py-2 tracking-wide">
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-all duration-300 flex items-end">
+                                <div className="w-full bg-black/70 text-white text-xs px-4 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <span className="block font-medium">Ver detalle →</span>
+                                </div>
+                            </div>
+                            <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-xs px-4 py-2 tracking-wide pointer-events-none">
                                 Título de la fotografía · Ciudad, año · Colección
                             </div>
-                        </div>
+                        </button>
                         <div className="pt-1">
                             <h2 className="font-serif text-xl md:text-2xl font-bold text-neutral-900 mb-3 leading-snug">
                                 Nombre del evento, persona o momento retratado
                             </h2>
                             <p className="text-sm text-neutral-600 leading-relaxed mb-3">
-                                Texto curatorial de dos a cuatro líneas. Describe qué muestra la
-                                imagen, quién aparece, en qué contexto fue tomada y por qué
-                                importa dentro del tema del fanzine.
-                            </p>
-                            <p className="text-sm text-neutral-600 leading-relaxed">
-                                Si hay una segunda capa de lectura — un detalle visual, un dato
-                                histórico — va acá, también breve.
+                                Texto curatorial de dos a cuatro líneas.
                             </p>
                             <div className="mt-5 pt-4 border-t border-neutral-200 text-xs text-neutral-500 space-y-1">
                                 <div className="flex gap-4"><span className="w-20 text-neutral-400">Fecha</span><span>[día mes año]</span></div>
-                                <div className="flex gap-4"><span className="w-20 text-neutral-400">Colección</span><span>Fondo Sindical · Sección [nombre]</span></div>
+                                <div className="flex gap-4"><span className="w-20 text-neutral-400">Colección</span><span>Fondo Sindical</span></div>
                                 <div className="flex gap-4"><span className="w-20 text-neutral-400">Tipo</span><span>Fotografía analógica</span></div>
                             </div>
                         </div>
@@ -101,25 +147,38 @@ export default function FanzinePage(): React.ReactElement {
                             </h2>
                             <p className="text-sm text-neutral-600 leading-relaxed">
                                 Texto curatorial que pone en diálogo esta imagen con la anterior.
-                                Puede ser una cita, una anécdota, una fecha que ancla el contexto.
                             </p>
                             <div className="mt-5 pt-4 border-t border-neutral-200 text-xs text-neutral-500 space-y-1">
                                 <div className="flex gap-4"><span className="w-20 text-neutral-400">Fecha</span><span>[día mes año]</span></div>
-                                <div className="flex gap-4"><span className="w-20 text-neutral-400">Colección</span><span>Fondo Personal · [Nombre]</span></div>
+                                <div className="flex gap-4"><span className="w-20 text-neutral-400">Colección</span><span>Fondo Personal</span></div>
                                 <div className="flex gap-4"><span className="w-20 text-neutral-400">Tipo</span><span>Fotografía analógica</span></div>
                             </div>
                         </div>
-                        <div className="relative aspect-[4/5] bg-neutral-200 overflow-hidden order-1 md:order-2">
+                        <button
+                            className="relative aspect-[4/5] bg-neutral-200 overflow-hidden group w-full text-left order-1 md:order-2"
+                            onClick={() => {
+                                setModalLoading(true);
+                                preloadSrc(galeria[1]);
+                                setSelected(galeria[1]);
+                            }}
+                        >
                             <Image
-                                src={galeria[1].src}
+                                src={galeria[1]}
                                 alt=""
                                 fill
-                                className="object-cover"
+                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                placeholder="blur"
+                                blurDataURL={shimmer(600, 750)}
                             />
-                            <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-xs px-4 py-2 tracking-wide">
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-all duration-300 flex items-end">
+                                <div className="w-full bg-black/70 text-white text-xs px-4 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <span className="block font-medium">Ver detalle →</span>
+                                </div>
+                            </div>
+                            <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-xs px-4 py-2 tracking-wide pointer-events-none">
                                 Título de la fotografía · Ciudad, año · Colección
                             </div>
-                        </div>
+                        </button>
                     </div>
                 </section>
 
@@ -132,34 +191,39 @@ export default function FanzinePage(): React.ReactElement {
                     </p>
 
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-                        {galeria.map((img, index) => {
-                            // Generar spans de fila aleatorios (entre 1 y 3)
+                        {galeria.map((src, index) => {
+                            // Spans aleatorios para efecto masonry
                             const rowSpan = Math.floor(Math.random() * 3) + 1;
-                            // Generar spans de columna (cada 3ra imagen ocupa 2 columnas)
                             const colSpan = index % 3 === 0 ? "md:col-span-2" : "md:col-span-1";
-                            
+
                             return (
-                                <div
+                                <button
                                     key={index}
-                                    className={`relative ${colSpan} bg-neutral-200 overflow-hidden group`}
+                                    className={`relative ${colSpan} bg-neutral-200 overflow-hidden group w-full text-left`}
                                     style={{
                                         gridRow: `span ${rowSpan}`,
                                         minHeight: `${rowSpan * 100}px`,
                                     }}
+                                    onClick={() => {
+                                        setModalLoading(true);
+                                        preloadSrc(src);
+                                        setSelected(src);
+                                    }}
                                 >
                                     <Image
-                                        src={img.src}
+                                        src={src}
                                         alt=""
                                         fill
                                         className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                        placeholder="blur"
+                                        blurDataURL={shimmer(300, 400)}
                                     />
-                                    <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                        <div className="w-full bg-black/70 text-white text-[10px] md:text-xs px-2 md:px-3 py-1.5 md:py-2">
-                                            <span className="block font-medium truncate">Descripción breve</span>
-                                            <span className="text-neutral-300">Valparaíso, [año]</span>
+                                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-all duration-300 flex items-end">
+                                        <div className="w-full bg-black/70 text-white text-[10px] md:text-xs px-2 md:px-3 py-1.5 md:py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                            <span className="block font-medium">Ver detalle →</span>
                                         </div>
                                     </div>
-                                </div>
+                                </button>
                             );
                         })}
                     </div>
@@ -212,6 +276,51 @@ export default function FanzinePage(): React.ReactElement {
                 </div>
 
             </main>
+
+            {/* ============================================ */}
+            {/* MODAL                                        */}
+            {/* ============================================ */}
+            {selected && (
+                <div
+                    className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 cursor-pointer"
+                    onClick={() => {
+                        setSelected(null);
+                        setModalLoading(true);
+                    }}
+                >
+                    <div
+                        className="relative w-full max-w-5xl max-h-[90vh] bg-black rounded-md overflow-hidden"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        {modalLoading && (
+                            <div className="absolute inset-0 flex items-center justify-center">
+                                <div className="h-10 w-10 animate-spin rounded-full border-2 border-white/40 border-t-white" />
+                            </div>
+                        )}
+
+                        <div className="relative w-full h-full min-h-[50vh] max-h-[80vh]">
+                            <Image
+                                src={selected}
+                                alt=""
+                                fill
+                                className="object-contain"
+                                sizes="100vw"
+                                onLoad={() => setModalLoading(false)}
+                            />
+                        </div>
+
+                        <button
+                            onClick={() => {
+                                setSelected(null);
+                                setModalLoading(true);
+                            }}
+                            className="absolute top-3 right-3 bg-white/90 hover:bg-white text-neutral-900 text-xs px-3 py-1.5 rounded transition-colors"
+                        >
+                            ✕ Cerrar
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
