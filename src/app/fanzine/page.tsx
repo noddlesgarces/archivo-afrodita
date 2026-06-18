@@ -147,11 +147,7 @@ export default function FanzinePage(): React.ReactElement {
                         </p>
                     </div>
 
-                    href="/archivo"
-                    className="bg-neutral-900 text-neutral-50 px-6 py-3 text-sm font-medium hover:bg-neutral-700 transition-colors whitespace-nowrap"
-                    <a>
-                        Explorar el archivo completo →
-                    </a>
+                   <a href="/archivo" className="...">Explorar el archivo completo →</a>
                 </div>
 
             </main>
