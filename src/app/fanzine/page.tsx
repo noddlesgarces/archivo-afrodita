@@ -7,12 +7,7 @@ import Image from "next/image";
 // Configuración R2
 const R2 = "https://cdn.archivoafrodita.cl";
 
-export const metadata = {
-    title: "Fanzine — Archivo Sindicato Afrodita",
-    description: "Material ampliado del fanzine del Sindicato Afrodita.",
-};
-
-// Solo los src, nada más
+// Solo los src
 const galeria = [
     `${R2}/organizacion-sindical/1.webp`,
     `${R2}/organizacion-sindical/14.webp`,
@@ -29,7 +24,7 @@ const galeria = [
     `${R2}/organizacion-sindical/10.webp`,
 ];
 
-// Shimmer para placeholder
+// Shimmer
 const shimmer = (w: number, h: number) =>
     `data:image/svg+xml;base64,${Buffer.from(
         `<svg width="${w}" height="${h}" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -58,7 +53,6 @@ export default function FanzinePage(): React.ReactElement {
         preloaded.current.add(src);
     };
 
-    // Cerrar con Escape
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
             if (e.key === "Escape") {
@@ -85,9 +79,7 @@ export default function FanzinePage(): React.ReactElement {
                         Título del tema central del fanzine
                     </h1>
                     <p className="text-sm md:text-base text-neutral-600 leading-relaxed max-w-2xl">
-                        Dos frases que sitúan al lector que llegó desde el papel. Qué va a
-                        encontrar acá, por qué este material existe y qué lo conecta con lo
-                        que ya leyó.
+                        Dos frases que sitúan al lector que llegó desde el papel.
                     </p>
                 </div>
 
@@ -182,9 +174,7 @@ export default function FanzinePage(): React.ReactElement {
                     </div>
                 </section>
 
-                {/* ============================================ */}
-                {/* GALERÍA DINÁMICA - CSS GRID CON SPANS        */}
-                {/* ============================================ */}
+                {/* GALERÍA */}
                 <section className="py-8 border-t border-neutral-200">
                     <p className="text-xs uppercase tracking-widest text-neutral-400 mb-8 pb-3 border-b border-neutral-200">
                         Galería · Material adicional
@@ -192,7 +182,6 @@ export default function FanzinePage(): React.ReactElement {
 
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
                         {galeria.map((src, index) => {
-                            // Spans aleatorios para efecto masonry
                             const rowSpan = Math.floor(Math.random() * 3) + 1;
                             const colSpan = index % 3 === 0 ? "md:col-span-2" : "md:col-span-1";
 
@@ -229,9 +218,7 @@ export default function FanzinePage(): React.ReactElement {
                     </div>
                 </section>
 
-                {/* ============================================ */}
-                {/* DOCUMENTOS Y CTA                             */}
-                {/* ============================================ */}
+                {/* DOCUMENTOS */}
                 <section className="py-12 md:py-16 border-t border-neutral-200">
                     <p className="text-xs uppercase tracking-widest text-neutral-400 mb-8 pb-3 border-b border-neutral-200">
                         Documentos relacionados
@@ -263,8 +250,7 @@ export default function FanzinePage(): React.ReactElement {
                             Hay más en el archivo
                         </h3>
                         <p className="text-sm text-neutral-500">
-                            Esta selección es una entrada. El archivo tiene más de X documentos
-                            digitalizados disponibles para explorar.
+                            Esta selección es una entrada. El archivo tiene más de X documentos disponibles.
                         </p>
                     </div>
                     <a
@@ -277,9 +263,7 @@ export default function FanzinePage(): React.ReactElement {
 
             </main>
 
-            {/* ============================================ */}
-            {/* MODAL                                        */}
-            {/* ============================================ */}
+            {/* MODAL */}
             {selected && (
                 <div
                     className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 cursor-pointer"
