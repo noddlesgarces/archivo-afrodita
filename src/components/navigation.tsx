@@ -11,7 +11,7 @@ const navigation = [
   { name: "Cronología", href: "/cronologia" },
   { name: "Actualidad", href: "/actualidad" },
   { name: "Contacto", href: "/contacto" },
-  { name: "Fanzine", href: "/fanzine" }, 
+  // { name: "Fanzine", href: "/fanzine" }, 
 ];
 
 export default function Navigation() {
