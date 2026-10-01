@@ -10,7 +10,7 @@ const navigation = [
   { name: "Fondos Personales", href: "/fondos-personales" },
   { name: "Cronología", href: "/cronologia" },
   { name: "Actualidad", href: "/actualidad" },
-  { name: "Repositorio", href: "/repositorio" },
+  // { name: "Repositorio", href: "/repositorio" },
   { name: "Contacto", href: "/contacto" },
   // { name: "Fanzine", href: "/fanzine" }, 
 ];
