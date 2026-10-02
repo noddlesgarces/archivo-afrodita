@@ -24,6 +24,12 @@ const nextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384]
   },
 
+  async redirects() {
+    return [
+      { source: "/home", destination: "/inicio", permanent: true }
+    ];
+  },
+
   async headers() {
     return [
       {

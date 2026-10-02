@@ -15,7 +15,7 @@ export default function SplashPage() {
   }, []);
 
   const handleIngresar = () => {
-    router.push("/home");
+    router.push("/inicio");
   };
 
   // Retorno prematuro durante la hidratación del lado del servidor
